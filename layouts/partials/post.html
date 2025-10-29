@@ -1,6 +1,6 @@
 <div class="card post">
     <div class="post-header">
-        <div class="post-avatar">{{ .Params.avatar | default "ME" }}</div>
+        <img src="{{ "profile.jpg" | relURL }}" alt="{{ .Params.author }}" class="post-avatar-img">
         <div class="post-author-info">
             <h4>{{ .Params.author | default "Your Name" }}</h4>
             <p>{{ .Params.authorTitle | default "Full Stack Developer (Half Stack on Mondays)" }}</p>

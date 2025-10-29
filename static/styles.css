@@ -123,6 +123,14 @@ body {
     margin-bottom: 2px;
 }
 
+.nav-avatar-img {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 2px;
+}
+
 /* Main Container */
 .main-container {
     max-width: 1128px;
@@ -177,6 +185,16 @@ body {
     color: white;
     font-size: 24px;
     font-weight: bold;
+}
+
+.profile-avatar-img {
+    width: 72px;
+    height: 72px;
+    border-radius: 50%;
+    margin: 0 auto 12px;
+    border: 2px solid white;
+    object-fit: cover;
+    display: block;
 }
 
 .profile-name {
@@ -294,6 +312,14 @@ body {
     flex-shrink: 0;
 }
 
+.creator-avatar-img {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    object-fit: cover;
+    flex-shrink: 0;
+}
+
 .post-creator-input input {
     flex: 1;
     border: 1px solid #00000099;
@@ -357,6 +383,14 @@ body {
     color: white;
     font-size: 16px;
     font-weight: bold;
+    flex-shrink: 0;
+}
+
+.post-avatar-img {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    object-fit: cover;
     flex-shrink: 0;
 }
 

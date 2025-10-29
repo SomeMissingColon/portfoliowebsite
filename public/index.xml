@@ -1,40 +1,61 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>LinkedOut - Professional Portfolio Parody</title>
+    <title>LinkedOut - Thomas Dion</title>
     <link>http://localhost:1313/</link>
-    <description>Recent content on LinkedOut - Professional Portfolio Parody</description>
+    <description>Recent content on LinkedOut - Thomas Dion</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 27 Oct 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 29 Oct 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Coffee to Code Conversion Success</title>
+      <title>53,000 Contacts Generated with Python &amp; SQL</title>
       <link>http://localhost:1313/post-1/</link>
-      <pubDate>Mon, 27 Oct 2025 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 29 Oct 2025 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/post-1/</guid>
-      <description>&lt;p&gt;Excited to announce that I&amp;rsquo;ve successfully turned coffee into code for the 1,847th consecutive day! 🎉&lt;/p&gt;&#xA;&lt;p&gt;Key achievements:&lt;/p&gt;&#xA;&lt;p&gt;✅ Fixed a bug I created yesterday&#xA;✅ Googled &amp;ldquo;how to center a div&amp;rdquo; for the 500th time&#xA;✅ Told my manager &amp;ldquo;it&amp;rsquo;ll be done by end of day&amp;rdquo; (it wasn&amp;rsquo;t)&#xA;✅ Named a variable &amp;ldquo;thing2&amp;rdquo; because &amp;ldquo;thing&amp;rdquo; was taken&lt;/p&gt;&#xA;&lt;p&gt;#DevLife #AlwaysLearning #SeniorDeveloper&lt;/p&gt;</description>
+      <description>&lt;p&gt;I&amp;rsquo;m excited to share a project that generated an additional &lt;strong&gt;$150K CAD in revenue&lt;/strong&gt; for my team! 💰&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;The Challenge:&lt;/strong&gt;&#xA;Our sales team needed high-quality leads in construction and professional services, but manual prospecting was eating up 20+ hours per week.&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;The Solution:&lt;/strong&gt;&#xA;Built a Python/SQL automation system that:&#xA;✅ Generated 53,000 targeted contacts across key industries&#xA;✅ Enriched data with company size, revenue estimates, and decision-maker titles&#xA;✅ Automated list distribution to account managers&#xA;✅ Integrated directly with our CRM pipeline&lt;/p&gt;</description>
     </item>
     <item>
-      <title>The 7 Stages of Programming</title>
+      <title>Cold Calling in 2025: Still Undefeated</title>
       <link>http://localhost:1313/post-2/</link>
-      <pubDate>Sun, 26 Oct 2025 00:00:00 +0000</pubDate>
+      <pubDate>Tue, 28 Oct 2025 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/post-2/</guid>
-      <description>&lt;p&gt;After 6 years of experience, I can confidently say that 90% of programming is:&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;Writing code&lt;/li&gt;&#xA;&lt;li&gt;Deleting that code&lt;/li&gt;&#xA;&lt;li&gt;Copying someone else&amp;rsquo;s code&lt;/li&gt;&#xA;&lt;li&gt;Googling why that code doesn&amp;rsquo;t work&lt;/li&gt;&#xA;&lt;li&gt;Adding console.log() everywhere&lt;/li&gt;&#xA;&lt;li&gt;Crying&lt;/li&gt;&#xA;&lt;li&gt;Repeat&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;p&gt;Currently accepting speaking engagements at conferences. Topic: &amp;ldquo;It Works on My Machine: A Memoir&amp;rdquo;&lt;/p&gt;</description>
+      <description>&lt;p&gt;Hot take: Cold calling isn&amp;rsquo;t dead. You&amp;rsquo;re just doing it wrong. 📞&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;My Stats at TELUS:&lt;/strong&gt;&#xA;• 60 calls per day (consistently)&#xA;• 2.4% conversion rate (industry average: 1-2%)&#xA;• 350+ new SMB clients acquired in 13 months&#xA;• $302K ARR generated&#xA;• 95% client retention rate (industry average: 80%)&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;What&amp;rsquo;s working in 2025:&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;1. Research Before the Call&lt;/strong&gt;&#xA;I spend 2 minutes researching each prospect. Their website, recent news, pain points. The call is 30 seconds, but the prep wins the deal.&lt;/p&gt;</description>
     </item>
     <item>
-      <title>Portfolio Highlights</title>
+      <title>Product Owner Who Codes: Why I Ship Faster</title>
       <link>http://localhost:1313/post-3/</link>
-      <pubDate>Fri, 24 Oct 2025 00:00:00 +0000</pubDate>
+      <pubDate>Sun, 26 Oct 2025 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/post-3/</guid>
-      <description>&lt;p&gt;&lt;strong&gt;PORTFOLIO HIGHLIGHTS&lt;/strong&gt; 🚀&lt;/p&gt;&#xA;&lt;p&gt;🏆 Successfully blamed 47 bugs on &amp;ldquo;user error&amp;rdquo;&#xA;🏆 Created a loading spinner so good, users forgot what they were waiting for&#xA;🏆 Master of the &amp;ldquo;Ctrl+C, Ctrl+V&amp;rdquo; keyboard shortcut&#xA;🏆 Expert at writing TODO comments I&amp;rsquo;ll never revisit&#xA;🏆 Proficient in pretending I understand blockchain&lt;/p&gt;&#xA;&lt;p&gt;Tech Stack: HTML, CSS, JavaScript, Coffee, Anxiety, Stack Overflow Premium&lt;/p&gt;&#xA;&lt;p&gt;Open to opportunities where &amp;ldquo;rockstar ninja&amp;rdquo; is in the job title!&lt;/p&gt;</description>
+      <description>&lt;p&gt;&lt;strong&gt;Unpopular opinion:&lt;/strong&gt; Product Owners should know how to code.&lt;/p&gt;&#xA;&lt;p&gt;Not because they need to write production code. But because it changes how you think about product development.&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;My Experience at Datazentrik:&lt;/strong&gt;&#xA;• Managed 104 weekly sprints&#xA;• Delivered 202 features&#xA;• Designed and implemented the Pétrole Papillons website end-to-end (frontend, API integration, UX)&#xA;• Automated SEO-optimized content creation using generative AI (LLMs, OpenAI)&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;What Coding Knowledge Gave Me:&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;1. Better User Stories&lt;/strong&gt;&#xA;I wasn&amp;rsquo;t writing vague requirements. I understood technical constraints and could write actionable acceptance criteria.&lt;/p&gt;</description>
     </item>
     <item>
-      <title>New Certification Completed!</title>
+      <title>From Wealth Manager to Tech Sales: My Unconventional Path</title>
       <link>http://localhost:1313/post-4/</link>
-      <pubDate>Wed, 22 Oct 2025 00:00:00 +0000</pubDate>
+      <pubDate>Fri, 24 Oct 2025 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/post-4/</guid>
-      <description>&lt;p&gt;I&amp;rsquo;m thrilled to share that I&amp;rsquo;ve completed another certification!&lt;/p&gt;&#xA;&lt;p&gt;📜 &amp;ldquo;Introduction to Ignoring Documentation and Learning the Hard Way&amp;rdquo;&lt;/p&gt;&#xA;&lt;p&gt;Course highlights:&#xA;• Module 1: Why Read Docs When You Can Experiment?&#xA;• Module 2: Advanced Console.log() Debugging Techniques&#xA;• Module 3: The Art of Stack Overflow Navigation&#xA;• Module 4: Deploying to Production on Friday Afternoons&lt;/p&gt;&#xA;&lt;p&gt;Huge thanks to my mentors: Imposter Syndrome and Caffeine Addiction. Couldn&amp;rsquo;t have done it without you!&lt;/p&gt;</description>
+      <description>&lt;p&gt;&lt;strong&gt;2018:&lt;/strong&gt; Graduated from Le Wagon (Full-Stack Web Developer)&#xA;&lt;strong&gt;2021:&lt;/strong&gt; Became a Wealth Manager at Manulife&#xA;&lt;strong&gt;2022:&lt;/strong&gt; Pivoted to Product Owner at a tech startup&#xA;&lt;strong&gt;2024:&lt;/strong&gt; Now an Account Manager at TELUS crushing quota&lt;/p&gt;&#xA;&lt;p&gt;People ask: &amp;ldquo;Why didn&amp;rsquo;t you just become a developer?&amp;rdquo;&lt;/p&gt;&#xA;&lt;p&gt;Here&amp;rsquo;s the truth: &lt;strong&gt;I found my edge at the intersection of sales, product, and code.&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;What Wealth Management Taught Me:&lt;/strong&gt;&#xA;• Cold calling high-net-worth clients ($200k-$400k portfolios)&#xA;• Simplifying complex concepts for non-technical audiences&#xA;• Building trust through consultative selling&#xA;• Portfolio management &amp;amp; risk analysis&#xA;• Acquired $1.3M in AUM in 12 months&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>How I Exceeded Quota by 20% (While Others Missed Theirs)</title>
+      <link>http://localhost:1313/post-5/</link>
+      <pubDate>Wed, 22 Oct 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/post-5/</guid>
+      <description>&lt;p&gt;13 months at TELUS. $302K ARR. 20% above quota.&lt;/p&gt;&#xA;&lt;p&gt;Here&amp;rsquo;s exactly what I did differently:&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;1. Volume + Quality (Not Volume OR Quality)&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;Most reps choose one. I refused.&lt;/p&gt;&#xA;&lt;p&gt;• 60 calls/day (volume)&#xA;• 2 minutes of research per call (quality)&#xA;• Targeted industries where I had domain knowledge&#xA;• Used Python to prioritize highest-value prospects&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;2. Upsells Start at &amp;ldquo;Hello&amp;rdquo;&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;I don&amp;rsquo;t wait 6 months to upsell. I identify expansion opportunities during the first conversation.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>I Automated Content Creation with AI (Here&#39;s What Actually Worked)</title>
+      <link>http://localhost:1313/post-6/</link>
+      <pubDate>Mon, 20 Oct 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/post-6/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;The Project:&lt;/strong&gt; Automate SEO-optimized content creation using generative AI&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;The Tools:&lt;/strong&gt; OpenAI, Claude, Gemini, DeepSeek, Ollama, N8N, LangChain&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;The Goal:&lt;/strong&gt; Create high-quality content at scale without sacrificing quality&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;What Actually Worked:&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;1. LLMs Aren&amp;rsquo;t Magic (But They&amp;rsquo;re Close)&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;You can&amp;rsquo;t just prompt &amp;ldquo;write me a blog post&amp;rdquo; and expect gold. You need:&#xA;• Context about the brand voice&#xA;• SEO keywords and search intent&#xA;• Content structure/outline&#xA;• Examples of high-performing content&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>My Tech Stack as an Account Manager (Yes, Really)</title>
+      <link>http://localhost:1313/post-7/</link>
+      <pubDate>Sat, 18 Oct 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/post-7/</guid>
+      <description>&lt;p&gt;People are always surprised when I tell them I use Python, SQL, and cloud services as an Account Manager.&lt;/p&gt;&#xA;&lt;p&gt;&amp;ldquo;Isn&amp;rsquo;t that for developers?&amp;rdquo;&lt;/p&gt;&#xA;&lt;p&gt;Nope. It&amp;rsquo;s for anyone who wants an unfair advantage.&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;My Sales Tech Stack:&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;🐍 Python&lt;/strong&gt;&#xA;• Lead generation scripts&#xA;• Data enrichment automation&#xA;• CRM data cleaning&#xA;• Pipeline analytics&#xA;• Email sequence optimization&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;🗄️ SQL&lt;/strong&gt;&#xA;• Querying customer databases&#xA;• Building custom reports&#xA;• Analyzing conversion patterns&#xA;• Segmenting prospects&#xA;• Performance dashboards&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

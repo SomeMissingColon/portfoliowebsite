@@ -1,22 +1,35 @@
 ---
-title: "Coffee to Code Conversion Success"
-date: 2025-10-27
-author: "Your Name"
-authorTitle: "Full Stack Developer (Half Stack on Mondays)"
-avatar: "ME"
-reactions: ["👍", "😂", "❤️"]
-reactionText: "Your mom and 2 bots"
-comments: "0"
-shares: "1 share (you sharing to yourself)"
+title: "53,000 Contacts Generated with Python & SQL"
+date: 2025-10-29
+author: "Thomas Dion"
+authorTitle: "Account Manager at TELUS | Python Automation Enthusiast"
+avatar: "TD"
+reactions: ["👍", "🔥", "💡"]
+reactionText: "47 people (including your sales team)"
+comments: "8"
+shares: "12"
 ---
 
-Excited to announce that I've successfully turned coffee into code for the 1,847th consecutive day! 🎉
+I'm excited to share a project that generated an additional **$150K CAD in revenue** for my team! 💰
 
-Key achievements:
+**The Challenge:**
+Our sales team needed high-quality leads in construction and professional services, but manual prospecting was eating up 20+ hours per week.
 
-✅ Fixed a bug I created yesterday
-✅ Googled "how to center a div" for the 500th time
-✅ Told my manager "it'll be done by end of day" (it wasn't)
-✅ Named a variable "thing2" because "thing" was taken
+**The Solution:**
+Built a Python/SQL automation system that:
+✅ Generated 53,000 targeted contacts across key industries
+✅ Enriched data with company size, revenue estimates, and decision-maker titles
+✅ Automated list distribution to account managers
+✅ Integrated directly with our CRM pipeline
 
-#DevLife #AlwaysLearning #SeniorDeveloper
+**The Results:**
+📊 $150K CAD in additional ARR after strategic redistribution
+⏱️ Saved 200+ hours of manual prospecting work
+🎯 Higher quality leads = better conversion rates
+
+**The Lesson:**
+Tech skills aren't just for developers. Sales professionals who can code have a serious competitive advantage.
+
+What processes are you automating in your role?
+
+#SalesAutomation #Python #AccountManagement #SalesOps #GrowthHacking

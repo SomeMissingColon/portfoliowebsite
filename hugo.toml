@@ -1,40 +1,41 @@
 baseURL = 'https://example.org/'
 languageCode = 'en-us'
-title = 'LinkedOut - Professional Portfolio Parody'
+title = 'LinkedOut - Thomas Dion'
 
 [params]
-  authorName = "Your Name Here"
-  headline = "Professional Procrastinator | Coffee-to-Code Converter | Bug Creator & Destroyer"
-  profileViewers = "3 (all you)"
-  postImpressions = "Mostly depression"
+  authorName = "Thomas Dion"
+  headline = "Account Manager | Product Owner | Python Automation Enthusiast | $300K+ ARR Generator"
+  profileViewers = "350+ (mostly prospects I cold called)"
+  postImpressions = "53,000 contacts generated"
 
   recentItems = [
-    "Stack Overflow Copy-Pasters",
-    "#debugging-at-3am",
-    "#works-on-my-machine"
+    "Sales Automation Nerds",
+    "#PythonForSales",
+    "#ColdCallingChampion",
+    "#ProductManagement"
   ]
 
   [[params.newsItems]]
-    title = "\"Senior\" devs admit they still Google basic syntax"
+    title = "Account Manager automates sales with Python, saves 200 hours"
     time = "2h ago"
     readers = "10,847"
 
   [[params.newsItems]]
-    title = "Study finds 99% of LinkedIn posts are humble brags"
+    title = "Cold calling still works: 2.4% conversion rate beats email"
     time = "4h ago"
     readers = "8,294"
 
   [[params.newsItems]]
-    title = "New framework released, nobody asked for it"
+    title = "Product Owners who code ship 3x faster features"
     time = "6h ago"
     readers = "5,621"
 
   [[params.newsItems]]
-    title = "Developer solves problem by turning it off and on"
+    title = "AI-powered SEO content: Hype or game-changer?"
     time = "8h ago"
     readers = "12,394"
 
   [[params.newsItems]]
-    title = "\"It's not a bug, it's a feature\" now official policy"
+    title = "Sales + Tech skills = Competitive advantage in 2025"
     time = "1d ago"
     readers = "7,103"

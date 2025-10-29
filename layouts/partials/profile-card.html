@@ -1,7 +1,7 @@
 <div class="card profile-card">
     <div class="profile-cover"></div>
     <div class="profile-info">
-        <div class="profile-avatar">YOU</div>
+        <img src="{{ "profile.jpg" | relURL }}" alt="{{ .Site.Params.authorName }}" class="profile-avatar-img">
         <h3 class="profile-name">{{ .Site.Params.authorName | default "Your Name Here" }}</h3>
         <p class="profile-headline">{{ .Site.Params.headline | default "Professional Procrastinator | Coffee-to-Code Converter | Bug Creator & Destroyer" }}</p>
     </div>

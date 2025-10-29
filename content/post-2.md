@@ -1,22 +1,43 @@
 ---
-title: "The 7 Stages of Programming"
-date: 2025-10-26
-author: "Your Name"
-authorTitle: "Professional Debugger | Amateur Coder"
-avatar: "ME"
-reactions: ["👍", "💡"]
-reactionText: "7 people you don't know"
-comments: "2"
+title: "Cold Calling in 2025: Still Undefeated"
+date: 2025-10-28
+author: "Thomas Dion"
+authorTitle: "Account Manager | 2.4% Conversion Rate | 60 Calls/Day"
+avatar: "TD"
+reactions: ["👍", "💪", "📞"]
+reactionText: "34 (mostly other cold callers)"
+comments: "15"
+shares: "8"
 ---
 
-After 6 years of experience, I can confidently say that 90% of programming is:
+Hot take: Cold calling isn't dead. You're just doing it wrong. 📞
 
-1. Writing code
-2. Deleting that code
-3. Copying someone else's code
-4. Googling why that code doesn't work
-5. Adding console.log() everywhere
-6. Crying
-7. Repeat
+**My Stats at TELUS:**
+• 60 calls per day (consistently)
+• 2.4% conversion rate (industry average: 1-2%)
+• 350+ new SMB clients acquired in 13 months
+• $302K ARR generated
+• 95% client retention rate (industry average: 80%)
 
-Currently accepting speaking engagements at conferences. Topic: "It Works on My Machine: A Memoir"
+**What's working in 2025:**
+
+**1. Research Before the Call**
+I spend 2 minutes researching each prospect. Their website, recent news, pain points. The call is 30 seconds, but the prep wins the deal.
+
+**2. Value First, Pitch Second**
+I lead with a specific problem I've solved for similar companies. No generic scripts.
+
+**3. Embrace the Rejection**
+97.6% of my calls don't convert. That's okay. The 2.4% pays the bills.
+
+**4. Tech Stack Advantage**
+Python scripts help me prioritize highest-value prospects. I'm not just dialing randomly.
+
+**The Uncomfortable Truth:**
+Most sales reps quit after 10 rejections. I get 10 rejections before my second coffee.
+
+Cold calling works. But only if you show up every single day.
+
+Who else is still crushing it with cold calls? Drop your best tip below. 👇
+
+#ColdCalling #SalesLife #B2BSales #AccountManagement #SalesStrategy
