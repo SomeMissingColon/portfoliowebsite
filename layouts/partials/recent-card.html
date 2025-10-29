@@ -1,0 +1,14 @@
+<div class="card recent-card">
+    <h4>Recent</h4>
+    {{ range .Site.Params.recentItems | default (slice "Stack Overflow Copy-Pasters" "debugging-at-3am" "works-on-my-machine") }}
+    <div class="recent-item">
+        {{ if hasPrefix . "#" }}
+            <i class="fa-solid fa-hashtag"></i>
+            <span>{{ strings.TrimPrefix "#" . }}</span>
+        {{ else }}
+            <i class="fa-solid fa-user-group"></i>
+            <span>{{ . }}</span>
+        {{ end }}
+    </div>
+    {{ end }}
+</div>

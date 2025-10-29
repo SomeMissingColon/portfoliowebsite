@@ -1,0 +1,48 @@
+<div class="card post">
+    <div class="post-header">
+        <div class="post-avatar">{{ .Params.avatar | default "ME" }}</div>
+        <div class="post-author-info">
+            <h4>{{ .Params.author | default "Your Name" }}</h4>
+            <p>{{ .Params.authorTitle | default "Full Stack Developer (Half Stack on Mondays)" }}</p>
+            <p class="post-time">{{ .Date.Format "2 Jan" }} • <i class="fa-solid fa-earth-americas"></i></p>
+        </div>
+        <button class="post-menu"><i class="fa-solid fa-ellipsis"></i></button>
+    </div>
+    <div class="post-content">
+        {{ .Content }}
+    </div>
+    <div class="post-stats">
+        <div class="post-reactions">
+            <div class="reaction-icons">
+                {{ range .Params.reactions | default (slice "👍" "😂") }}
+                <span class="reaction-icon">{{ . }}</span>
+                {{ end }}
+            </div>
+            <span>{{ .Params.reactionText | default "Your mom and 2 bots" }}</span>
+        </div>
+        <div class="post-counts">
+            <span>{{ .Params.comments | default "0" }} comments</span>
+            {{ if .Params.shares }}
+            <span>{{ .Params.shares }} shares</span>
+            {{ end }}
+        </div>
+    </div>
+    <div class="post-actions">
+        <button class="action-btn">
+            <i class="fa-solid fa-thumbs-up"></i>
+            <span>Like</span>
+        </button>
+        <button class="action-btn">
+            <i class="fa-solid fa-comment"></i>
+            <span>Comment</span>
+        </button>
+        <button class="action-btn">
+            <i class="fa-solid fa-share"></i>
+            <span>Share</span>
+        </button>
+        <button class="action-btn">
+            <i class="fa-solid fa-paper-plane"></i>
+            <span>Send</span>
+        </button>
+    </div>
+</div>

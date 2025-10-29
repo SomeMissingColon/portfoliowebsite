@@ -1,0 +1,23 @@
+<div class="card news-card">
+    <div class="news-header">
+        <h4>LinkedOut News</h4>
+        <i class="fa-solid fa-info-circle"></i>
+    </div>
+    {{ $newsItems := .Site.Params.newsItems }}
+    {{ if not $newsItems }}
+        {{ $newsItems = slice
+            (dict "title" "\"Senior\" devs admit they still Google basic syntax" "time" "2h ago" "readers" "10,847")
+            (dict "title" "Study finds 99% of LinkedIn posts are humble brags" "time" "4h ago" "readers" "8,294")
+            (dict "title" "New framework released, nobody asked for it" "time" "6h ago" "readers" "5,621")
+            (dict "title" "Developer solves problem by turning it off and on" "time" "8h ago" "readers" "12,394")
+            (dict "title" "\"It's not a bug, it's a feature\" now official policy" "time" "1d ago" "readers" "7,103")
+        }}
+    {{ end }}
+    {{ range $newsItems }}
+    <div class="news-item">
+        <h5>• {{ .title }}</h5>
+        <p class="news-time">{{ .time }} • {{ .readers }} readers</p>
+    </div>
+    {{ end }}
+    <button class="show-more">Show more <i class="fa-solid fa-caret-down"></i></button>
+</div>

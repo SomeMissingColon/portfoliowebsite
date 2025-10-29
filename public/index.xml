@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>LinkedOut - Professional Portfolio Parody</title>
+    <link>http://localhost:1313/</link>
+    <description>Recent content on LinkedOut - Professional Portfolio Parody</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 27 Oct 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Coffee to Code Conversion Success</title>
+      <link>http://localhost:1313/post-1/</link>
+      <pubDate>Mon, 27 Oct 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/post-1/</guid>
+      <description>&lt;p&gt;Excited to announce that I&amp;rsquo;ve successfully turned coffee into code for the 1,847th consecutive day! 🎉&lt;/p&gt;&#xA;&lt;p&gt;Key achievements:&lt;/p&gt;&#xA;&lt;p&gt;✅ Fixed a bug I created yesterday&#xA;✅ Googled &amp;ldquo;how to center a div&amp;rdquo; for the 500th time&#xA;✅ Told my manager &amp;ldquo;it&amp;rsquo;ll be done by end of day&amp;rdquo; (it wasn&amp;rsquo;t)&#xA;✅ Named a variable &amp;ldquo;thing2&amp;rdquo; because &amp;ldquo;thing&amp;rdquo; was taken&lt;/p&gt;&#xA;&lt;p&gt;#DevLife #AlwaysLearning #SeniorDeveloper&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>The 7 Stages of Programming</title>
+      <link>http://localhost:1313/post-2/</link>
+      <pubDate>Sun, 26 Oct 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/post-2/</guid>
+      <description>&lt;p&gt;After 6 years of experience, I can confidently say that 90% of programming is:&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;Writing code&lt;/li&gt;&#xA;&lt;li&gt;Deleting that code&lt;/li&gt;&#xA;&lt;li&gt;Copying someone else&amp;rsquo;s code&lt;/li&gt;&#xA;&lt;li&gt;Googling why that code doesn&amp;rsquo;t work&lt;/li&gt;&#xA;&lt;li&gt;Adding console.log() everywhere&lt;/li&gt;&#xA;&lt;li&gt;Crying&lt;/li&gt;&#xA;&lt;li&gt;Repeat&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;p&gt;Currently accepting speaking engagements at conferences. Topic: &amp;ldquo;It Works on My Machine: A Memoir&amp;rdquo;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Portfolio Highlights</title>
+      <link>http://localhost:1313/post-3/</link>
+      <pubDate>Fri, 24 Oct 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/post-3/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;PORTFOLIO HIGHLIGHTS&lt;/strong&gt; 🚀&lt;/p&gt;&#xA;&lt;p&gt;🏆 Successfully blamed 47 bugs on &amp;ldquo;user error&amp;rdquo;&#xA;🏆 Created a loading spinner so good, users forgot what they were waiting for&#xA;🏆 Master of the &amp;ldquo;Ctrl+C, Ctrl+V&amp;rdquo; keyboard shortcut&#xA;🏆 Expert at writing TODO comments I&amp;rsquo;ll never revisit&#xA;🏆 Proficient in pretending I understand blockchain&lt;/p&gt;&#xA;&lt;p&gt;Tech Stack: HTML, CSS, JavaScript, Coffee, Anxiety, Stack Overflow Premium&lt;/p&gt;&#xA;&lt;p&gt;Open to opportunities where &amp;ldquo;rockstar ninja&amp;rdquo; is in the job title!&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>New Certification Completed!</title>
+      <link>http://localhost:1313/post-4/</link>
+      <pubDate>Wed, 22 Oct 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/post-4/</guid>
+      <description>&lt;p&gt;I&amp;rsquo;m thrilled to share that I&amp;rsquo;ve completed another certification!&lt;/p&gt;&#xA;&lt;p&gt;📜 &amp;ldquo;Introduction to Ignoring Documentation and Learning the Hard Way&amp;rdquo;&lt;/p&gt;&#xA;&lt;p&gt;Course highlights:&#xA;• Module 1: Why Read Docs When You Can Experiment?&#xA;• Module 2: Advanced Console.log() Debugging Techniques&#xA;• Module 3: The Art of Stack Overflow Navigation&#xA;• Module 4: Deploying to Production on Friday Afternoons&lt;/p&gt;&#xA;&lt;p&gt;Huge thanks to my mentors: Imposter Syndrome and Caffeine Addiction. Couldn&amp;rsquo;t have done it without you!&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
