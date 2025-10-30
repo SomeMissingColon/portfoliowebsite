@@ -18,7 +18,7 @@
             {{ partial "post-creator.html" . }}
 
             <!-- Feed Posts from Content -->
-            {{ range .Site.RegularPages }}
+            {{ range where .Site.RegularPages "Params.author" "!=" nil }}
                 {{ partial "post.html" . }}
             {{ end }}
         </main>
