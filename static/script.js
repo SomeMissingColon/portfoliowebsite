@@ -41,12 +41,9 @@ document.addEventListener('DOMContentLoaded', () => {
     const postCreatorInput = document.querySelector('.post-creator-input input');
 
     if (postCreatorInput) {
-        postCreatorInput.addEventListener('click', function() {
-            const response = prompt('Share your completely unoriginal thoughts:\n\n(This will appear at the top of your feed)');
-
-            if (response && response.trim()) {
-                createNewPost(response);
-            }
+        postCreatorInput.addEventListener('click', function(e) {
+            e.preventDefault();
+            openPostModal();
         });
     }
 
@@ -244,7 +241,7 @@ function createNewPost(content) {
 
     newPost.innerHTML = `
         <div class="post-header">
-            <div class="post-avatar">ME</div>
+            <img src="/ronaldo.jpg" alt="Profile" class="post-avatar-img">
             <div class="post-author-info">
                 <h4>Your Name</h4>
                 <p>Thought Leader in Overthinking</p>
@@ -333,6 +330,97 @@ function escapeHtml(text) {
     return div.innerHTML;
 }
 
+// Function to open post modal
+function openPostModal() {
+    const modal = document.createElement('div');
+    modal.className = 'post-modal-overlay';
+    modal.innerHTML = `
+        <div class="post-modal">
+            <div class="post-modal-header">
+                <div class="post-modal-user">
+                    <img src="/ronaldo.jpg" alt="Profile" class="post-modal-avatar">
+                    <div>
+                        <h4>Thomas Dion</h4>
+                        <p>Post to Anyone</p>
+                    </div>
+                </div>
+                <button class="post-modal-close">&times;</button>
+            </div>
+            <div class="post-modal-body">
+                <textarea placeholder="What do you want to talk about?" autofocus></textarea>
+            </div>
+            <div class="post-modal-footer">
+                <div class="post-modal-actions">
+                    <button class="post-modal-action" title="Add emoji">
+                        <i class="fa-regular fa-face-smile"></i>
+                    </button>
+                    <button class="post-modal-action" title="Add photo">
+                        <i class="fa-regular fa-image"></i>
+                    </button>
+                    <button class="post-modal-action" title="Add event">
+                        <i class="fa-regular fa-calendar"></i>
+                    </button>
+                    <button class="post-modal-action" title="Celebrate an occasion">
+                        <i class="fa-solid fa-trophy"></i>
+                    </button>
+                    <button class="post-modal-action" title="More">
+                        <i class="fa-solid fa-plus"></i>
+                    </button>
+                </div>
+                <button class="post-modal-submit">Post</button>
+            </div>
+        </div>
+    `;
+
+    document.body.appendChild(modal);
+
+    // Focus textarea
+    setTimeout(() => {
+        const textarea = modal.querySelector('textarea');
+        textarea.focus();
+    }, 100);
+
+    // Close modal handlers
+    const closeBtn = modal.querySelector('.post-modal-close');
+    const overlay = modal;
+    const submitBtn = modal.querySelector('.post-modal-submit');
+    const textarea = modal.querySelector('textarea');
+
+    closeBtn.addEventListener('click', () => {
+        modal.remove();
+    });
+
+    overlay.addEventListener('click', (e) => {
+        if (e.target === overlay) {
+            modal.remove();
+        }
+    });
+
+    // Submit post
+    submitBtn.addEventListener('click', () => {
+        const content = textarea.value.trim();
+        if (content) {
+            createNewPost(content);
+            modal.remove();
+        }
+    });
+
+    // Enable submit button only when there's content
+    textarea.addEventListener('input', () => {
+        if (textarea.value.trim()) {
+            submitBtn.disabled = false;
+            submitBtn.style.opacity = '1';
+        } else {
+            submitBtn.disabled = true;
+            submitBtn.style.opacity = '0.5';
+        }
+    });
+
+    // Initially disable submit button
+    submitBtn.disabled = true;
+    submitBtn.style.opacity = '0.5';
+}
+
 // Add CSS animation
 const style = document.createElement('style');
 style.textContent = `
@@ -350,6 +438,171 @@ style.textContent = `
     .action-btn i,
     .action-btn span {
         transition: all 0.2s;
+    }
+
+    /* Post Modal Styles */
+    .post-modal-overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: rgba(0, 0, 0, 0.5);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: 10000;
+        animation: fadeIn 0.2s ease-out;
+    }
+
+    @keyframes fadeIn {
+        from { opacity: 0; }
+        to { opacity: 1; }
+    }
+
+    .post-modal {
+        background: white;
+        border-radius: 8px;
+        width: 90%;
+        max-width: 550px;
+        max-height: 90vh;
+        display: flex;
+        flex-direction: column;
+        animation: slideUp 0.3s ease-out;
+    }
+
+    @keyframes slideUp {
+        from {
+            transform: translateY(50px);
+            opacity: 0;
+        }
+        to {
+            transform: translateY(0);
+            opacity: 1;
+        }
+    }
+
+    .post-modal-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        padding: 20px;
+        border-bottom: 1px solid #e0e0e0;
+    }
+
+    .post-modal-user {
+        display: flex;
+        gap: 12px;
+        align-items: center;
+    }
+
+    .post-modal-avatar {
+        width: 48px;
+        height: 48px;
+        border-radius: 50%;
+        object-fit: cover;
+    }
+
+    .post-modal-user h4 {
+        margin: 0;
+        font-size: 16px;
+        font-weight: 600;
+        color: #000;
+    }
+
+    .post-modal-user p {
+        margin: 4px 0 0 0;
+        font-size: 13px;
+        color: #666;
+    }
+
+    .post-modal-close {
+        background: none;
+        border: none;
+        font-size: 28px;
+        color: #666;
+        cursor: pointer;
+        padding: 0;
+        width: 32px;
+        height: 32px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        transition: background 0.2s;
+    }
+
+    .post-modal-close:hover {
+        background: #f0f0f0;
+    }
+
+    .post-modal-body {
+        padding: 20px;
+        flex: 1;
+        overflow-y: auto;
+    }
+
+    .post-modal-body textarea {
+        width: 100%;
+        min-height: 200px;
+        border: none;
+        outline: none;
+        font-size: 16px;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+        resize: none;
+        color: #000;
+    }
+
+    .post-modal-body textarea::placeholder {
+        color: #999;
+    }
+
+    .post-modal-footer {
+        padding: 12px 20px;
+        border-top: 1px solid #e0e0e0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .post-modal-actions {
+        display: flex;
+        gap: 8px;
+    }
+
+    .post-modal-action {
+        background: none;
+        border: none;
+        padding: 8px;
+        cursor: pointer;
+        color: #666;
+        font-size: 20px;
+        border-radius: 4px;
+        transition: background 0.2s;
+    }
+
+    .post-modal-action:hover {
+        background: #f0f0f0;
+    }
+
+    .post-modal-submit {
+        background: #0a66c2;
+        color: white;
+        border: none;
+        padding: 10px 24px;
+        border-radius: 20px;
+        font-size: 16px;
+        font-weight: 600;
+        cursor: pointer;
+        transition: background 0.2s, opacity 0.2s;
+    }
+
+    .post-modal-submit:hover:not(:disabled) {
+        background: #004182;
+    }
+
+    .post-modal-submit:disabled {
+        cursor: not-allowed;
     }
 `;
 document.head.appendChild(style);
