@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Messaging - LinkedOut</title>
+    <link rel="stylesheet" href="/styles.css">
+    <link rel="stylesheet" href="/messaging.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-left">
+                <a href="http://localhost:1313/" class="logo">
+                    <i class="fa-brands fa-linkedin"></i>
+                    <span class="logo-text">LinkedOut</span>
+                </a>
+                <div class="search-bar">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <input type="text" placeholder="Search for skills I don't have">
+                </div>
+            </div>
+            <div class="nav-right">
+                <a href="http://localhost:1313/" class="nav-item">
+                    <i class="fa-solid fa-house"></i>
+                    <span>Home</span>
+                </a>
+                <a href="#" class="nav-item">
+                    <i class="fa-solid fa-user-group"></i>
+                    <span>Network</span>
+                </a>
+                <a href="#" class="nav-item">
+                    <i class="fa-solid fa-briefcase"></i>
+                    <span>Jobs</span>
+                </a>
+                <a href="/messaging" class="nav-item nav-item-active">
+                    <i class="fa-solid fa-comment-dots"></i>
+                    <span>Messaging</span>
+                </a>
+                <a href="#" class="nav-item">
+                    <i class="fa-solid fa-bell"></i>
+                    <span>Notifications</span>
+                </a>
+                <a href="/profile" class="nav-item profile-nav">
+                    <img src="/profile.jpg" alt="Profile" class="nav-avatar-img">
+                    <span>Me <i class="fa-solid fa-caret-down"></i></span>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    
+    <div class="messaging-container">
+        
+        <aside class="conversations-sidebar">
+            <div class="conversations-header">
+                <h2>Messaging</h2>
+                <div class="conversations-actions">
+                    <button class="icon-btn" title="More options">
+                        <i class="fa-solid fa-ellipsis"></i>
+                    </button>
+                    <button class="icon-btn" title="New message">
+                        <i class="fa-solid fa-pen-to-square"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="conversations-search">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input type="text" placeholder="Search messages">
+            </div>
+            <div class="conversations-list">
+                
+                <div class="conversation-item active" data-conversation="thomas">
+                    <img src="/profile.jpg" alt="Thomas Dion" class="conversation-avatar">
+                    <div class="conversation-info">
+                        <div class="conversation-header">
+                            <h4>Thomas Dion</h4>
+                            <span class="conversation-time">Just now</span>
+                        </div>
+                        <p class="conversation-preview">Hey! Thanks for checking out my portfolio...</p>
+                    </div>
+                </div>
+            </div>
+            <div class="no-other-conversations">
+                <p><em>You have no other conversations. I'm the only one here! 😅</em></p>
+            </div>
+        </aside>
+
+        
+        <main class="message-thread">
+            <div class="message-thread-header">
+                <div class="thread-header-info">
+                    <img src="/profile.jpg" alt="Thomas Dion" class="thread-avatar">
+                    <div>
+                        <h3>Thomas Dion</h3>
+                        <p class="thread-status">Active now</p>
+                    </div>
+                </div>
+                <div class="thread-header-actions">
+                    <button class="icon-btn" title="Call">
+                        <i class="fa-solid fa-phone"></i>
+                    </button>
+                    <button class="icon-btn" title="Video call">
+                        <i class="fa-solid fa-video"></i>
+                    </button>
+                    <button class="icon-btn" title="More options">
+                        <i class="fa-solid fa-ellipsis"></i>
+                    </button>
+                </div>
+            </div>
+
+            <div class="messages-container" id="messagesContainer">
+                
+                <div class="message-date">Today</div>
+
+                <div class="message received">
+                    <img src="/profile.jpg" alt="Thomas Dion" class="message-avatar">
+                    <div class="message-bubble">
+                        <p>Hey! 👋 Thanks for visiting my LinkedOut portfolio!</p>
+                    </div>
+                </div>
+
+                <div class="message received">
+                    <img src="/profile.jpg" alt="Thomas Dion" class="message-avatar">
+                    <div class="message-bubble">
+                        <p>I'm Thomas - Account Manager at TELUS, former Product Owner, and someone who refuses to pick just one career path.</p>
+                    </div>
+                </div>
+
+                <div class="message received">
+                    <img src="/profile.jpg" alt="Thomas Dion" class="message-avatar">
+                    <div class="message-bubble">
+                        <p>Fun fact: I built this entire site while pretending to work. 😎</p>
+                    </div>
+                </div>
+
+                <div class="message received">
+                    <img src="/profile.jpg" alt="Thomas Dion" class="message-avatar">
+                    <div class="message-bubble">
+                        <p>Want to chat about sales automation, Python, AI, or why LinkedIn is simultaneously brilliant and exhausting?</p>
+                        <p style="margin-top: 8px;">Drop me a message! (It won't actually send anywhere, but it's the thought that counts 😂)</p>
+                    </div>
+                </div>
+
+                
+            </div>
+
+            <div class="message-input-container">
+                <button class="icon-btn">
+                    <i class="fa-solid fa-plus"></i>
+                </button>
+                <div class="message-input-wrapper">
+                    <input type="text" id="messageInput" placeholder="Write a message..." class="message-input">
+                    <div class="message-input-actions">
+                        <button class="icon-btn">
+                            <i class="fa-regular fa-face-smile"></i>
+                        </button>
+                        <button class="icon-btn">
+                            <i class="fa-solid fa-image"></i>
+                        </button>
+                        <button class="icon-btn">
+                            <i class="fa-solid fa-paperclip"></i>
+                        </button>
+                    </div>
+                </div>
+                <button class="send-btn" id="sendBtn">
+                    <i class="fa-solid fa-paper-plane"></i>
+                </button>
+            </div>
+        </main>
+
+        
+        <aside class="message-info-sidebar">
+            <div class="info-profile">
+                <img src="/profile.jpg" alt="Thomas Dion" class="info-avatar">
+                <h3>Thomas Dion</h3>
+                <p>Account Manager | Product Owner | Python Automation Enthusiast</p>
+                <a href="/profile" class="view-profile-btn">View profile</a>
+            </div>
+
+            <div class="info-section">
+                <h4>Quick facts</h4>
+                <div class="info-item">
+                    <i class="fa-solid fa-building"></i>
+                    <span>Works at TELUS</span>
+                </div>
+                <div class="info-item">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <span>Montreal, Quebec</span>
+                </div>
+                <div class="info-item">
+                    <i class="fa-solid fa-code"></i>
+                    <span>Python, SQL, JavaScript</span>
+                </div>
+                <div class="info-item">
+                    <i class="fa-solid fa-language"></i>
+                    <span>English, Français</span>
+                </div>
+            </div>
+
+            <div class="info-section">
+                <h4>About this conversation</h4>
+                <p class="info-text">This is a humorous clone of LinkedIn messaging. You're literally the only person I can message here because... well, it's my portfolio site! 😄</p>
+            </div>
+
+            <div class="info-section">
+                <h4>Contact info</h4>
+                <div class="info-item">
+                    <i class="fa-solid fa-envelope"></i>
+                    <span>thomasnoidion@gmail.com</span>
+                </div>
+                <div class="info-item">
+                    <i class="fa-solid fa-phone"></i>
+                    <span>+1 (438) 462-2434</span>
+                </div>
+                <div class="info-item">
+                    <i class="fa-brands fa-linkedin"></i>
+                    <span>linkedin.com/in/thomas-dion</span>
+                </div>
+            </div>
+        </aside>
+    </div>
+
+    <script src="/script.js"></script>
+    <script src="/messaging.js"></script>
+</body>
+</html>

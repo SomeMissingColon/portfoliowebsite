@@ -141,6 +141,11 @@ body {
     gap: 24px;
 }
 
+.main-container-no-left {
+    grid-template-columns: 1fr 300px;
+    max-width: 900px;
+}
+
 /* Card Styles */
 .card {
     background-color: #ffffff;
@@ -392,10 +397,30 @@ body {
     border-radius: 50%;
     object-fit: cover;
     flex-shrink: 0;
+    cursor: pointer;
+    transition: opacity 0.2s;
+}
+
+.post-avatar-img:hover {
+    opacity: 0.8;
 }
 
 .post-author-info {
     flex: 1;
+}
+
+.author-name-link {
+    text-decoration: none;
+    color: inherit;
+}
+
+.author-name-link h4 {
+    cursor: pointer;
+}
+
+.author-name-link:hover h4 {
+    color: #0a66c2;
+    text-decoration: underline;
 }
 
 .post-author-info h4 {

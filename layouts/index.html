@@ -34,7 +34,7 @@
                     <i class="fa-solid fa-briefcase"></i>
                     <span>Jobs</span>
                 </a>
-                <a href="#" class="nav-item">
+                <a href="{{ "messaging" | relURL }}" class="nav-item">
                     <i class="fa-solid fa-comment-dots"></i>
                     <span>Messaging</span>
                 </a>
@@ -51,13 +51,7 @@
     </nav>
 
     <!-- Main Content -->
-    <div class="main-container">
-        <!-- Left Sidebar -->
-        <aside class="left-sidebar">
-            {{ partial "profile-card.html" . }}
-            {{ partial "recent-card.html" . }}
-        </aside>
-
+    <div class="main-container main-container-no-left">
         <!-- Feed -->
         <main class="feed">
             <!-- Post Creator -->

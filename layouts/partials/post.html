@@ -1,8 +1,12 @@
 <div class="card post">
     <div class="post-header">
-        <img src="{{ "profile.jpg" | relURL }}" alt="{{ .Params.author }}" class="post-avatar-img">
+        <a href="{{ "profile" | relURL }}">
+            <img src="{{ "profile.jpg" | relURL }}" alt="{{ .Params.author }}" class="post-avatar-img">
+        </a>
         <div class="post-author-info">
-            <h4>{{ .Params.author | default "Your Name" }}</h4>
+            <a href="{{ "profile" | relURL }}" class="author-name-link">
+                <h4>{{ .Params.author | default "Your Name" }}</h4>
+            </a>
             <p>{{ .Params.authorTitle | default "Full Stack Developer (Half Stack on Mondays)" }}</p>
             <p class="post-time">{{ .Date.Format "2 Jan" }} • <i class="fa-solid fa-earth-americas"></i></p>
         </div>
