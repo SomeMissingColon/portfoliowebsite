@@ -69,6 +69,84 @@ document.addEventListener('DOMContentLoaded', () => {
     // Navigation items - popup features removed
     // Nav items now use actual links defined in navbar.html partial
 
+    // Profile "Me" dropdown
+    const profileNav = document.querySelector('.profile-nav');
+
+    if (profileNav) {
+        // Create profile dropdown
+        const profileDropdown = document.createElement('div');
+        profileDropdown.className = 'profile-dropdown';
+        profileDropdown.innerHTML = `
+            <div class="profile-dropdown-header">
+                <img src="/ronaldo.jpg" alt="Profile" class="profile-dropdown-avatar">
+                <div class="profile-dropdown-info">
+                    <h4>Ronaldo</h4>
+                    <p>Sales Professional & Technology Enthusiast</p>
+                </div>
+            </div>
+            <a href="/profile" class="profile-dropdown-btn primary">View profile</a>
+
+            <div class="profile-dropdown-section">
+                <h5>Account</h5>
+                <a href="#" class="profile-dropdown-link">Settings & Privacy</a>
+                <a href="#" class="profile-dropdown-link">Help</a>
+                <a href="#" class="profile-dropdown-link">Language</a>
+            </div>
+
+            <div class="profile-dropdown-section">
+                <h5>Manage</h5>
+                <a href="#" class="profile-dropdown-link">Posts & Activity</a>
+                <a href="#" class="profile-dropdown-link">Job Posting Account</a>
+            </div>
+
+            <a href="#" class="profile-dropdown-link sign-out">Sign Out</a>
+        `;
+        document.body.appendChild(profileDropdown);
+
+        // Toggle dropdown
+        profileNav.addEventListener('click', function(e) {
+            e.preventDefault();
+            e.stopPropagation();
+
+            // Close if already open
+            if (profileDropdown.classList.contains('show')) {
+                profileDropdown.classList.remove('show');
+                return;
+            }
+
+            // Position dropdown below the profile nav
+            const rect = profileNav.getBoundingClientRect();
+            profileDropdown.style.top = `${rect.bottom + 5}px`;
+            profileDropdown.style.right = `${window.innerWidth - rect.right}px`;
+
+            // Show dropdown
+            profileDropdown.classList.add('show');
+        });
+
+        // Close dropdown when clicking outside
+        document.addEventListener('click', function(e) {
+            if (!profileDropdown.contains(e.target) && e.target !== profileNav && !profileNav.contains(e.target)) {
+                profileDropdown.classList.remove('show');
+            }
+        });
+
+        // Handle link clicks
+        const dropdownLinks = profileDropdown.querySelectorAll('.profile-dropdown-link');
+        dropdownLinks.forEach(link => {
+            link.addEventListener('click', function(e) {
+                if (this.classList.contains('sign-out')) {
+                    e.preventDefault();
+                    alert('👋 Signed out!\n\nJust kidding, this is a parody portfolio site. You can\'t actually sign out because you were never signed in. 😎');
+                } else if (!this.getAttribute('href') || this.getAttribute('href') === '#') {
+                    e.preventDefault();
+                    const linkText = this.textContent;
+                    alert(`🔧 "${linkText}" feature coming soon!\n\nThis is a static portfolio site, so we\'re keeping things simple.`);
+                }
+                profileDropdown.classList.remove('show');
+            });
+        });
+    }
+
     // Notification bell - cheeky dropdown
     const notificationBell = document.querySelector('.nav-item:has(.fa-bell)');
 
@@ -603,6 +681,102 @@ style.textContent = `
 
     .post-modal-submit:disabled {
         cursor: not-allowed;
+    }
+
+    /* Profile Dropdown Styles */
+    .profile-dropdown {
+        position: fixed;
+        background: white;
+        border-radius: 8px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+        width: 280px;
+        z-index: 9999;
+        display: none;
+        overflow: hidden;
+    }
+
+    .profile-dropdown.show {
+        display: block;
+        animation: fadeIn 0.2s ease-out;
+    }
+
+    .profile-dropdown-header {
+        padding: 16px;
+        display: flex;
+        gap: 12px;
+        align-items: center;
+        border-bottom: 1px solid #e0e0e0;
+    }
+
+    .profile-dropdown-avatar {
+        width: 56px;
+        height: 56px;
+        border-radius: 50%;
+        object-fit: cover;
+    }
+
+    .profile-dropdown-info h4 {
+        margin: 0;
+        font-size: 16px;
+        font-weight: 600;
+        color: #000;
+    }
+
+    .profile-dropdown-info p {
+        margin: 4px 0 0 0;
+        font-size: 12px;
+        color: #666;
+        line-height: 1.3;
+    }
+
+    .profile-dropdown-btn {
+        display: block;
+        margin: 12px 16px;
+        padding: 8px 16px;
+        border: 1px solid #0a66c2;
+        border-radius: 20px;
+        text-align: center;
+        color: #0a66c2;
+        font-weight: 600;
+        font-size: 14px;
+        text-decoration: none;
+        transition: background 0.2s, color 0.2s;
+    }
+
+    .profile-dropdown-btn:hover {
+        background: rgba(10, 102, 194, 0.1);
+    }
+
+    .profile-dropdown-section {
+        padding: 8px 0;
+        border-top: 1px solid #e0e0e0;
+    }
+
+    .profile-dropdown-section h5 {
+        margin: 0;
+        padding: 8px 16px;
+        font-size: 12px;
+        font-weight: 600;
+        color: #000;
+    }
+
+    .profile-dropdown-link {
+        display: block;
+        padding: 8px 16px;
+        color: #000;
+        font-size: 14px;
+        text-decoration: none;
+        transition: background 0.2s;
+    }
+
+    .profile-dropdown-link:hover {
+        background: #f3f6f8;
+    }
+
+    .profile-dropdown-link.sign-out {
+        border-top: 1px solid #e0e0e0;
+        margin-top: 8px;
+        padding-top: 12px;
     }
 `;
 document.head.appendChild(style);
