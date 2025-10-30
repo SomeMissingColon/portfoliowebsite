@@ -69,29 +69,8 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    // Navigation items
-    const navItems = document.querySelectorAll('.nav-item');
-
-    navItems.forEach(item => {
-        item.addEventListener('click', function(e) {
-            e.preventDefault();
-            const itemName = this.querySelector('span') ? this.querySelector('span').textContent : 'Item';
-
-            if (itemName === 'Home') {
-                alert('🏠 You\'re already home! There\'s nowhere to go.');
-            } else if (itemName === 'Network') {
-                alert('👥 Network: 0 connections (and counting down)');
-            } else if (itemName === 'Jobs') {
-                alert('💼 Job recommendations: Senior Meme Engineer, Chief Procrastination Officer');
-            } else if (itemName === 'Messaging') {
-                alert('💬 Messages: Just recruiters asking if you know JavaScript. You said yes. It was a lie.');
-            } else if (itemName === 'Notifications') {
-                alert('🔔 Notifications: Someone you don\'t know celebrated a work anniversary!');
-            } else if (itemName.includes('Me')) {
-                alert('👤 Profile: Professional Imposter Syndrome Sufferer');
-            }
-        });
-    });
+    // Navigation items - popup features removed
+    // Nav items now use actual links defined in navbar.html partial
 
     // News items
     const newsItems = document.querySelectorAll('.news-item');
