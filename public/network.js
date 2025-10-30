@@ -17,6 +17,28 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
     });
+
+    // Add click handlers to person cards
+    const personCards = document.querySelectorAll('.person-card');
+    personCards.forEach((card, index) => {
+        card.addEventListener('click', function(event) {
+            // Don't redirect if clicking the connect button
+            if (event.target.closest('.btn-connect')) {
+                return;
+            }
+
+            // Get the person name from the h4
+            const personName = this.querySelector('h4').textContent;
+
+            // Ronaldo goes to YouTube video (index 5, or check by name)
+            if (personName === 'Ronaldo') {
+                window.open('https://www.youtube.com/watch?v=nA8wHQvHPJU', '_blank');
+            } else {
+                // All Thomas profiles go to jobs page
+                window.location.href = '/jobs';
+            }
+        });
+    });
 });
 
 // Handle connect button clicks
