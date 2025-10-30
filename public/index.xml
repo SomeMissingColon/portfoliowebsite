@@ -72,6 +72,13 @@
       <description></description>
     </item>
     <item>
+      <title>My Network</title>
+      <link>http://localhost:1313/network/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/network/</guid>
+      <description></description>
+    </item>
+    <item>
       <title>Thomas Dion - Profile</title>
       <link>http://localhost:1313/profile/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>

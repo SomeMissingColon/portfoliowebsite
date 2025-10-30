@@ -32,6 +32,8 @@
   </url><url>
     <loc>http://localhost:1313/messaging/</loc>
   </url><url>
+    <loc>http://localhost:1313/network/</loc>
+  </url><url>
     <loc>http://localhost:1313/tags/</loc>
   </url><url>
     <loc>http://localhost:1313/profile/</loc>

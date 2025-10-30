@@ -1,0 +1,516 @@
+/* Network Page Styles - LinkedIn Theme */
+
+.network-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 24px;
+    display: grid;
+    grid-template-columns: 220px 1fr 300px;
+    gap: 24px;
+    margin-top: 76px; /* Account for fixed navbar */
+}
+
+/* Left Sidebar */
+.network-sidebar {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.manage-network {
+    padding: 16px;
+}
+
+.manage-network h3 {
+    margin: 0 0 16px 0;
+    font-size: 16px;
+    font-weight: 600;
+    color: #000000e6;
+}
+
+.network-stat {
+    display: flex;
+    gap: 12px;
+    padding: 12px 0;
+    border-bottom: 1px solid #0000000d;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.network-stat:last-child {
+    border-bottom: none;
+}
+
+.network-stat:hover {
+    background-color: #0000000d;
+    margin: 0 -16px;
+    padding: 12px 16px;
+}
+
+.network-stat i {
+    font-size: 20px;
+    color: #00000099;
+    width: 24px;
+    flex-shrink: 0;
+}
+
+.network-stat strong {
+    display: block;
+    font-size: 14px;
+    color: #000000e6;
+    margin-bottom: 2px;
+}
+
+.network-stat p {
+    margin: 0;
+    font-size: 12px;
+    color: #00000099;
+}
+
+/* Hashtags */
+.network-hashtags {
+    padding: 16px;
+}
+
+.network-hashtags h3 {
+    margin: 0 0 16px 0;
+    font-size: 16px;
+    font-weight: 600;
+    color: #000000e6;
+}
+
+.hashtag-item {
+    padding: 12px 0;
+    border-bottom: 1px solid #0000000d;
+}
+
+.hashtag-item:last-child {
+    border-bottom: none;
+}
+
+.hashtag {
+    display: block;
+    color: #0a66c2;
+    font-weight: 600;
+    font-size: 14px;
+    margin-bottom: 4px;
+}
+
+.hashtag-item p {
+    margin: 0;
+    font-size: 12px;
+    color: #00000099;
+    font-style: italic;
+}
+
+/* Main Content */
+.network-main {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 16px;
+}
+
+.card-header h2 {
+    margin: 0;
+    font-size: 20px;
+    color: #000000e6;
+}
+
+.count-badge {
+    background-color: #0a66c2;
+    color: white;
+    padding: 2px 8px;
+    border-radius: 12px;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.see-all {
+    color: #00000099;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.see-all:hover {
+    color: #0a66c2;
+    text-decoration: underline;
+}
+
+/* Invitations Card */
+.invitations-card {
+    padding: 24px;
+}
+
+.empty-state {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.empty-state i {
+    font-size: 48px;
+    color: #00000033;
+    margin-bottom: 16px;
+}
+
+.empty-state h3 {
+    margin: 0 0 8px 0;
+    font-size: 18px;
+    color: #000000e6;
+}
+
+.empty-state p {
+    margin: 0;
+    color: #00000099;
+    font-size: 14px;
+}
+
+/* People You May Know */
+.people-may-know-card {
+    padding: 24px;
+}
+
+.people-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+}
+
+.person-card {
+    border: 1px solid #0000001a;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: all 0.2s;
+    background: white;
+}
+
+.person-card:hover {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    transform: translateY(-2px);
+}
+
+.person-background {
+    height: 60px;
+    background: linear-gradient(135deg, #0a66c2 0%, #004182 100%);
+}
+
+.person-avatar {
+    width: 72px;
+    height: 72px;
+    border-radius: 50%;
+    background-color: #e0e0e0;
+    border: 3px solid white;
+    margin: -36px auto 12px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    font-weight: 600;
+    color: #00000099;
+}
+
+.person-info {
+    padding: 0 16px 16px 16px;
+    text-align: center;
+}
+
+.person-info h4 {
+    margin: 0 0 4px 0;
+    font-size: 16px;
+    color: #000000e6;
+}
+
+.person-info p {
+    margin: 0 0 8px 0;
+    font-size: 13px;
+    color: #00000099;
+}
+
+.mutual-connections {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+    font-size: 12px !important;
+    color: #00000099 !important;
+    margin-top: 8px !important;
+}
+
+.mutual-connections i {
+    font-size: 12px;
+}
+
+.btn-connect {
+    width: calc(100% - 32px);
+    margin: 0 16px 16px 16px;
+    padding: 8px 16px;
+    background-color: white;
+    border: 1.5px solid #0a66c2;
+    color: #0a66c2;
+    border-radius: 24px;
+    font-weight: 600;
+    font-size: 14px;
+    cursor: pointer;
+    transition: all 0.2s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+}
+
+.btn-connect:hover {
+    background-color: #e8f0f7;
+    border-width: 2px;
+}
+
+.btn-connect.connected {
+    background-color: #0a66c2;
+    color: white;
+}
+
+.btn-connect.connected:hover {
+    background-color: #004182;
+}
+
+/* Connections Card */
+.connections-card {
+    padding: 24px;
+}
+
+.connection-item {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+    padding: 16px;
+    border: 1px solid #0000001a;
+    border-radius: 8px;
+    margin-bottom: 16px;
+    transition: background-color 0.2s;
+}
+
+.connection-item:hover {
+    background-color: #0000000d;
+}
+
+.connection-avatar {
+    width: 72px;
+    height: 72px;
+    border-radius: 50%;
+    object-fit: cover;
+    flex-shrink: 0;
+}
+
+.connection-info {
+    flex: 1;
+}
+
+.connection-name {
+    text-decoration: none;
+}
+
+.connection-info h4 {
+    margin: 0 0 4px 0;
+    font-size: 16px;
+    color: #000000e6;
+    transition: color 0.2s;
+}
+
+.connection-name:hover h4 {
+    color: #0a66c2;
+    text-decoration: underline;
+}
+
+.connection-info p {
+    margin: 0 0 4px 0;
+    font-size: 14px;
+    color: #00000099;
+}
+
+.connection-date {
+    font-size: 12px !important;
+    color: #00000099 !important;
+}
+
+.btn-message {
+    padding: 8px 16px;
+    background-color: white;
+    border: 1.5px solid #0a66c2;
+    color: #0a66c2;
+    border-radius: 24px;
+    font-weight: 600;
+    font-size: 14px;
+    cursor: pointer;
+    transition: all 0.2s;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    flex-shrink: 0;
+}
+
+.btn-message:hover {
+    background-color: #e8f0f7;
+    border-width: 2px;
+}
+
+.empty-state-small {
+    text-align: center;
+    padding: 16px;
+    background-color: #f3f6f8;
+    border-radius: 8px;
+}
+
+.empty-state-small p {
+    margin: 0;
+    color: #00000099;
+    font-size: 13px;
+    font-style: italic;
+}
+
+/* Right Sidebar */
+.network-right-sidebar {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.add-feed-card,
+.learning-ad {
+    padding: 16px;
+}
+
+.add-feed-card h3,
+.learning-ad h3 {
+    margin: 0 0 8px 0;
+    font-size: 16px;
+    font-weight: 600;
+    color: #000000e6;
+}
+
+.feed-description {
+    margin: 0 0 16px 0;
+    font-size: 13px;
+    color: #00000099;
+}
+
+.feed-suggestion {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 12px 0;
+    border-bottom: 1px solid #0000000d;
+}
+
+.feed-suggestion:last-child {
+    border-bottom: none;
+}
+
+.feed-avatar {
+    width: 48px;
+    height: 48px;
+    border-radius: 4px;
+    background-color: #f3f6f8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    flex-shrink: 0;
+}
+
+.feed-suggestion div {
+    flex: 1;
+}
+
+.feed-suggestion strong {
+    display: block;
+    font-size: 14px;
+    color: #000000e6;
+    margin-bottom: 2px;
+}
+
+.feed-suggestion p {
+    margin: 0;
+    font-size: 12px;
+    color: #00000099;
+}
+
+.btn-follow {
+    padding: 6px 12px;
+    background-color: white;
+    border: 1px solid #00000033;
+    color: #00000099;
+    border-radius: 16px;
+    font-weight: 600;
+    font-size: 14px;
+    cursor: pointer;
+    transition: all 0.2s;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    flex-shrink: 0;
+}
+
+.btn-follow:hover {
+    background-color: #0000000d;
+    border-color: #00000066;
+    color: #000000e6;
+}
+
+/* Learning Ad */
+.course-item {
+    padding: 12px 0;
+    border-bottom: 1px solid #0000000d;
+}
+
+.course-item:last-child {
+    border-bottom: none;
+}
+
+.course-item strong {
+    display: block;
+    font-size: 14px;
+    color: #000000e6;
+    margin-bottom: 4px;
+}
+
+.course-item p {
+    margin: 0;
+    font-size: 12px;
+    color: #00000099;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .network-container {
+        grid-template-columns: 1fr 300px;
+    }
+
+    .network-sidebar {
+        display: none;
+    }
+
+    .people-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .network-container {
+        grid-template-columns: 1fr;
+        padding: 16px;
+    }
+
+    .network-right-sidebar {
+        display: none;
+    }
+
+    .people-grid {
+        grid-template-columns: 1fr;
+    }
+}

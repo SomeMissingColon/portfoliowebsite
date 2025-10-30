@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.Language.Lang }}">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Network - LinkedOut</title>
+    <link rel="stylesheet" href="{{ "styles.css" | relURL }}">
+    <link rel="stylesheet" href="{{ "network.css" | relURL }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    {{ partial "navbar.html" . }}
+
+    <!-- Network Container -->
+    <div class="network-container">
+        <!-- Left Sidebar -->
+        <aside class="network-sidebar">
+            <div class="card manage-network">
+                <h3>Manage my network</h3>
+                <div class="network-stat">
+                    <i class="fa-solid fa-user-group"></i>
+                    <div>
+                        <strong>Connections</strong>
+                        <p>1 connection (it's complicated)</p>
+                    </div>
+                </div>
+                <div class="network-stat">
+                    <i class="fa-solid fa-users"></i>
+                    <div>
+                        <strong>Contacts</strong>
+                        <p>53,000+ (thanks Python!)</p>
+                    </div>
+                </div>
+                <div class="network-stat">
+                    <i class="fa-solid fa-user-plus"></i>
+                    <div>
+                        <strong>Invitations</strong>
+                        <p>0 pending (forever alone)</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card network-hashtags">
+                <h3>Hashtags I follow</h3>
+                <div class="hashtag-item">
+                    <span class="hashtag">#SalesAutomation</span>
+                    <p>Because manual work is for suckers</p>
+                </div>
+                <div class="hashtag-item">
+                    <span class="hashtag">#PythonDev</span>
+                    <p>My secret weapon</p>
+                </div>
+                <div class="hashtag-item">
+                    <span class="hashtag">#ColdCalling</span>
+                    <p>60 calls/day keeps the quota away</p>
+                </div>
+            </div>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="network-main">
+            <!-- No Invitations -->
+            <div class="card invitations-card">
+                <div class="card-header">
+                    <h2>Invitations</h2>
+                    <span class="count-badge">0</span>
+                </div>
+                <div class="empty-state">
+                    <i class="fa-regular fa-envelope"></i>
+                    <h3>No pending invitations</h3>
+                    <p>Because this is a one-person network. It's me. I'm the network. 😅</p>
+                </div>
+            </div>
+
+            <!-- People You May Know -->
+            <div class="card people-may-know-card">
+                <div class="card-header">
+                    <h2>People you may know</h2>
+                    <a href="#" class="see-all">See all</a>
+                </div>
+                <div class="people-grid">
+                    <!-- Person 1 -->
+                    <div class="person-card">
+                        <div class="person-background"></div>
+                        <div class="person-avatar">TD</div>
+                        <div class="person-info">
+                            <h4>Thomas (Future Version)</h4>
+                            <p>CEO & Founder at DionCorp</p>
+                            <p class="mutual-connections">
+                                <i class="fa-solid fa-user"></i>
+                                1 mutual connection (me)
+                            </p>
+                        </div>
+                        <button class="btn-connect" onclick="handleConnect(this, 'Future Thomas')">
+                            <i class="fa-solid fa-user-plus"></i>
+                            Connect
+                        </button>
+                    </div>
+
+                    <!-- Person 2 -->
+                    <div class="person-card">
+                        <div class="person-background"></div>
+                        <div class="person-avatar">TD</div>
+                        <div class="person-info">
+                            <h4>Thomas (Past Version)</h4>
+                            <p>Student at Le Wagon</p>
+                            <p class="mutual-connections">
+                                <i class="fa-solid fa-user"></i>
+                                1 mutual connection (also me)
+                            </p>
+                        </div>
+                        <button class="btn-connect" onclick="handleConnect(this, 'Past Thomas')">
+                            <i class="fa-solid fa-user-plus"></i>
+                            Connect
+                        </button>
+                    </div>
+
+                    <!-- Person 3 -->
+                    <div class="person-card">
+                        <div class="person-background"></div>
+                        <div class="person-avatar">TC</div>
+                        <div class="person-info">
+                            <h4>Thomas Clone #1</h4>
+                            <p>Account Manager who can't code</p>
+                            <p class="mutual-connections">
+                                <i class="fa-solid fa-user"></i>
+                                Something feels off here...
+                            </p>
+                        </div>
+                        <button class="btn-connect" onclick="handleConnect(this, 'Clone #1')">
+                            <i class="fa-solid fa-user-plus"></i>
+                            Connect
+                        </button>
+                    </div>
+
+                    <!-- Person 4 -->
+                    <div class="person-card">
+                        <div class="person-background"></div>
+                        <div class="person-avatar">DT</div>
+                        <div class="person-info">
+                            <h4>Dion Thomas</h4>
+                            <p>Developer who can't sell</p>
+                            <p class="mutual-connections">
+                                <i class="fa-solid fa-user"></i>
+                                Definitely not suspicious
+                            </p>
+                        </div>
+                        <button class="btn-connect" onclick="handleConnect(this, 'Dion Thomas')">
+                            <i class="fa-solid fa-user-plus"></i>
+                            Connect
+                        </button>
+                    </div>
+
+                    <!-- Person 5 -->
+                    <div class="person-card">
+                        <div class="person-background"></div>
+                        <div class="person-avatar">🤖</div>
+                        <div class="person-info">
+                            <h4>Thomas AI Bot</h4>
+                            <p>Automated version of me</p>
+                            <p class="mutual-connections">
+                                <i class="fa-solid fa-robot"></i>
+                                Built with Python & Claude
+                            </p>
+                        </div>
+                        <button class="btn-connect" onclick="handleConnect(this, 'AI Bot')">
+                            <i class="fa-solid fa-user-plus"></i>
+                            Connect
+                        </button>
+                    </div>
+
+                    <!-- Person 6 -->
+                    <div class="person-card">
+                        <div class="person-background"></div>
+                        <div class="person-avatar">
+                            <img src="{{ "ronaldo.jpg" | relURL }}" alt="Ronaldo" style="width: 100%; height: 100%; object-fit: cover; border-radius: 50%;">
+                        </div>
+                        <div class="person-info">
+                            <h4>Ronaldo</h4>
+                            <p>Professional Football Player</p>
+                            <p class="mutual-connections">
+                                <i class="fa-solid fa-futbol"></i>
+                                Why is he here? No idea.
+                            </p>
+                        </div>
+                        <button class="btn-connect" onclick="handleConnect(this, 'Ronaldo')">
+                            <i class="fa-solid fa-user-plus"></i>
+                            Connect
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- People I've Connected With -->
+            <div class="card connections-card">
+                <div class="card-header">
+                    <h2>My actual connection</h2>
+                    <span class="count-badge">1</span>
+                </div>
+                <div class="connection-item">
+                    <a href="{{ "profile" | relURL }}">
+                        <img src="{{ "profile.jpg" | relURL }}" alt="Thomas Dion" class="connection-avatar">
+                    </a>
+                    <div class="connection-info">
+                        <a href="{{ "profile" | relURL }}" class="connection-name">
+                            <h4>Thomas Dion</h4>
+                        </a>
+                        <p>Account Manager | Product Owner | Python Automation Enthusiast</p>
+                        <p class="connection-date">Connected since: The beginning of time</p>
+                    </div>
+                    <button class="btn-message" onclick="window.location.href='{{ "messaging" | relURL }}'">
+                        <i class="fa-solid fa-comment-dots"></i>
+                        Message
+                    </button>
+                </div>
+                <div class="empty-state-small">
+                    <p>That's it. That's the entire network. Quality over quantity, right? 😂</p>
+                </div>
+            </div>
+        </main>
+
+        <!-- Right Sidebar -->
+        <aside class="network-right-sidebar">
+            <!-- Add to Feed -->
+            <div class="card add-feed-card">
+                <h3>Add to your feed</h3>
+                <p class="feed-description">Follow things that interest you (or just follow yourself)</p>
+                <div class="feed-suggestion">
+                    <div class="feed-avatar">🐍</div>
+                    <div>
+                        <strong>Python Developers</strong>
+                        <p>53K followers</p>
+                    </div>
+                    <button class="btn-follow">
+                        <i class="fa-solid fa-plus"></i>
+                        Follow
+                    </button>
+                </div>
+                <div class="feed-suggestion">
+                    <div class="feed-avatar">💰</div>
+                    <div>
+                        <strong>Sales Automation</strong>
+                        <p>127K followers</p>
+                    </div>
+                    <button class="btn-follow">
+                        <i class="fa-solid fa-plus"></i>
+                        Follow
+                    </button>
+                </div>
+                <div class="feed-suggestion">
+                    <div class="feed-avatar">🤖</div>
+                    <div>
+                        <strong>AI & Machine Learning</strong>
+                        <p>892K followers</p>
+                    </div>
+                    <button class="btn-follow">
+                        <i class="fa-solid fa-plus"></i>
+                        Follow
+                    </button>
+                </div>
+            </div>
+
+            <!-- LinkedIn Learning Ad -->
+            <div class="card learning-ad">
+                <h3>Today's most viewed courses</h3>
+                <div class="course-item">
+                    <strong>How to Cold Call Without Crying</strong>
+                    <p>By Thomas Dion • 2 hours</p>
+                </div>
+                <div class="course-item">
+                    <strong>Python for Sales: Automate Your Way to Freedom</strong>
+                    <p>By Thomas Dion • 4 hours</p>
+                </div>
+                <div class="course-item">
+                    <strong>Being a Unicorn: Sales + Tech</strong>
+                    <p>By Thomas Dion • 6 hours</p>
+                </div>
+            </div>
+        </aside>
+    </div>
+
+    <script src="{{ "script.js" | relURL }}"></script>
+    <script src="{{ "network.js" | relURL }}"></script>
+</body>
+</html>

@@ -16,7 +16,7 @@
                 <i class="fa-solid fa-house"></i>
                 <span>Home</span>
             </a>
-            <a href="#" class="nav-item">
+            <a href="{{ "network" | relURL }}" class="nav-item {{ if eq .Page.Title "My Network" }}nav-item-active{{ end }}">
                 <i class="fa-solid fa-user-group"></i>
                 <span>Network</span>
             </a>

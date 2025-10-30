@@ -72,6 +72,123 @@ document.addEventListener('DOMContentLoaded', () => {
     // Navigation items - popup features removed
     // Nav items now use actual links defined in navbar.html partial
 
+    // Notification bell - cheeky dropdown
+    const notificationBell = document.querySelector('.nav-item:has(.fa-bell)');
+
+    if (notificationBell) {
+        // Create notification dropdown
+        const notificationDropdown = document.createElement('div');
+        notificationDropdown.className = 'notification-dropdown';
+        notificationDropdown.innerHTML = `
+            <div class="notification-header">
+                <h3>Notifications</h3>
+                <button class="mark-read-btn">Mark all as read</button>
+            </div>
+            <div class="notification-list">
+                <div class="notification-item unread">
+                    <div class="notification-avatar">TD</div>
+                    <div class="notification-content">
+                        <p><strong>You</strong> viewed your own profile</p>
+                        <span class="notification-time">2 minutes ago</span>
+                    </div>
+                </div>
+                <div class="notification-item unread">
+                    <div class="notification-avatar">👻</div>
+                    <div class="notification-content">
+                        <p><strong>LinkedIn Ghost</strong> is impressed by your automation skills</p>
+                        <span class="notification-time">1 hour ago</span>
+                    </div>
+                </div>
+                <div class="notification-item">
+                    <div class="notification-avatar">🤖</div>
+                    <div class="notification-content">
+                        <p><strong>Your Python Script</strong> generated 500 more leads while you slept</p>
+                        <span class="notification-time">3 hours ago</span>
+                    </div>
+                </div>
+                <div class="notification-item">
+                    <div class="notification-avatar">☕</div>
+                    <div class="notification-content">
+                        <p><strong>Your Coffee Machine</strong> is running low. Productivity at risk!</p>
+                        <span class="notification-time">5 hours ago</span>
+                    </div>
+                </div>
+                <div class="notification-item">
+                    <div class="notification-avatar">💼</div>
+                    <div class="notification-content">
+                        <p><strong>Recruiter #847</strong> wants to know if you're "open to opportunities"</p>
+                        <span class="notification-time">Yesterday</span>
+                    </div>
+                </div>
+                <div class="notification-item">
+                    <div class="notification-avatar">🎉</div>
+                    <div class="notification-content">
+                        <p><strong>You</strong> celebrated exceeding quota. Again.</p>
+                        <span class="notification-time">2 days ago</span>
+                    </div>
+                </div>
+                <div class="notification-item">
+                    <div class="notification-avatar">📊</div>
+                    <div class="notification-content">
+                        <p><strong>Someone you barely know</strong> celebrated a work anniversary!</p>
+                        <span class="notification-time">3 days ago</span>
+                    </div>
+                </div>
+            </div>
+            <div class="notification-footer">
+                <a href="#">See all notifications</a>
+            </div>
+        `;
+        document.body.appendChild(notificationDropdown);
+
+        // Toggle dropdown
+        notificationBell.addEventListener('click', function(e) {
+            e.preventDefault();
+            e.stopPropagation();
+
+            // Close if already open
+            if (notificationDropdown.classList.contains('show')) {
+                notificationDropdown.classList.remove('show');
+                return;
+            }
+
+            // Position dropdown below the bell
+            const rect = notificationBell.getBoundingClientRect();
+            notificationDropdown.style.top = `${rect.bottom + 5}px`;
+            notificationDropdown.style.right = `${window.innerWidth - rect.right}px`;
+
+            // Show dropdown
+            notificationDropdown.classList.add('show');
+        });
+
+        // Close dropdown when clicking outside
+        document.addEventListener('click', function(e) {
+            if (!notificationDropdown.contains(e.target) && e.target !== notificationBell) {
+                notificationDropdown.classList.remove('show');
+            }
+        });
+
+        // Mark all as read button
+        const markReadBtn = notificationDropdown.querySelector('.mark-read-btn');
+        markReadBtn.addEventListener('click', function(e) {
+            e.stopPropagation();
+            const unreadItems = notificationDropdown.querySelectorAll('.notification-item.unread');
+            unreadItems.forEach(item => item.classList.remove('unread'));
+
+            // Show a cheeky message
+            setTimeout(() => {
+                alert('📭 All notifications marked as read!\n\nJust kidding, they\'re all fake. But you feel productive now, right? 😎');
+            }, 200);
+        });
+
+        // Add notification badge
+        const badge = document.createElement('span');
+        badge.className = 'notification-badge';
+        badge.textContent = '7';
+        notificationBell.style.position = 'relative';
+        notificationBell.appendChild(badge);
+    }
+
     // News items
     const newsItems = document.querySelectorAll('.news-item');
 
