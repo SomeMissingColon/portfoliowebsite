@@ -1,10 +1,10 @@
 <div class="card profile-card">
     <div class="profile-cover"></div>
-    <div class="profile-info">
+    <a href="{{ "profile" | relURL }}" class="profile-info profile-link">
         <img src="{{ "profile.jpg" | relURL }}" alt="{{ .Site.Params.authorName }}" class="profile-avatar-img">
         <h3 class="profile-name">{{ .Site.Params.authorName | default "Your Name Here" }}</h3>
         <p class="profile-headline">{{ .Site.Params.headline | default "Professional Procrastinator | Coffee-to-Code Converter | Bug Creator & Destroyer" }}</p>
-    </div>
+    </a>
     <div class="profile-stats">
         <div class="stat-item">
             <span class="stat-label">Profile viewers</span>

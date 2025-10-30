@@ -1,0 +1,492 @@
+/* Profile Page Specific Styles */
+
+.profile-link {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+
+.profile-link:hover .profile-name {
+    color: #0a66c2;
+    text-decoration: underline;
+}
+
+.profile-page-container {
+    max-width: 1128px;
+    margin: 76px auto 0;
+    padding: 0 24px;
+    display: grid;
+    grid-template-columns: 1fr 300px;
+    gap: 24px;
+}
+
+/* Profile Header Card */
+.profile-header-card {
+    overflow: hidden;
+    margin-bottom: 8px;
+}
+
+.profile-header-bg {
+    height: 200px;
+    background: linear-gradient(135deg, #0a66c2, #004182);
+}
+
+.profile-header-content {
+    padding: 0 24px;
+    margin-top: -80px;
+    position: relative;
+}
+
+.profile-header-avatar {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    border: 4px solid white;
+    object-fit: cover;
+}
+
+.profile-header-info {
+    margin-top: 16px;
+}
+
+.profile-header-info h1 {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 4px;
+}
+
+.profile-header-headline {
+    font-size: 16px;
+    color: #00000099;
+    margin-bottom: 8px;
+}
+
+.profile-header-location {
+    font-size: 14px;
+    color: #00000099;
+    margin-bottom: 4px;
+}
+
+.profile-header-location a {
+    color: #0a66c2;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.profile-header-location a:hover {
+    text-decoration: underline;
+}
+
+.profile-header-connections {
+    font-size: 14px;
+    color: #0a66c2;
+    font-weight: 600;
+    margin-bottom: 16px;
+}
+
+.profile-header-actions {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 16px;
+}
+
+.btn-primary {
+    background-color: #0a66c2;
+    color: white;
+    border: none;
+    border-radius: 24px;
+    padding: 8px 24px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.btn-primary:hover {
+    background-color: #004182;
+}
+
+.btn-secondary {
+    background-color: transparent;
+    color: #0a66c2;
+    border: 1px solid #0a66c2;
+    border-radius: 24px;
+    padding: 8px 24px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.btn-secondary:hover {
+    background-color: #e8f3ff;
+    border-width: 2px;
+}
+
+.btn-icon {
+    background-color: transparent;
+    color: #00000099;
+    border: 1px solid #00000099;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.btn-icon:hover {
+    background-color: #f3f2ef;
+    border-color: #000;
+    color: #000;
+}
+
+.profile-header-highlights {
+    display: flex;
+    gap: 24px;
+    padding: 16px 0;
+    border-top: 1px solid #0000001f;
+}
+
+.highlight-item {
+    display: flex;
+    gap: 12px;
+    align-items: flex-start;
+}
+
+.highlight-item i {
+    font-size: 20px;
+    color: #00000099;
+    margin-top: 2px;
+}
+
+.highlight-item strong {
+    font-size: 14px;
+    font-weight: 600;
+    display: block;
+    margin-bottom: 2px;
+}
+
+.highlight-item p {
+    font-size: 12px;
+    color: #00000099;
+}
+
+/* Profile Sections */
+.profile-section {
+    padding: 24px;
+    margin-bottom: 8px;
+}
+
+.profile-section h2 {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 16px;
+}
+
+.section-content {
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.section-content p {
+    margin-bottom: 12px;
+}
+
+.section-content ul {
+    margin-left: 20px;
+    margin-bottom: 12px;
+}
+
+.section-content li {
+    margin-bottom: 8px;
+}
+
+/* Experience Items */
+.experience-item {
+    display: flex;
+    gap: 12px;
+    padding: 16px 0;
+    border-bottom: 1px solid #0000001f;
+}
+
+.experience-item:last-child {
+    border-bottom: none;
+}
+
+.experience-logo {
+    width: 48px;
+    height: 48px;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #0a66c2, #004182);
+    border-radius: 4px;
+    color: white;
+    font-size: 24px;
+}
+
+.experience-details h3 {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 2px;
+}
+
+.experience-details .company {
+    font-size: 14px;
+    margin-bottom: 2px;
+}
+
+.experience-details .duration,
+.experience-details .location {
+    font-size: 12px;
+    color: #00000099;
+}
+
+.experience-details .achievements {
+    margin-top: 8px;
+    margin-left: 20px;
+}
+
+.experience-details .achievements li {
+    margin-bottom: 6px;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.experience-details .achievements em {
+    color: #0a66c2;
+    font-style: italic;
+}
+
+/* Education Items */
+.education-item {
+    display: flex;
+    gap: 12px;
+    padding: 16px 0;
+    border-bottom: 1px solid #0000001f;
+}
+
+.education-item:last-child {
+    border-bottom: none;
+}
+
+.education-logo {
+    width: 48px;
+    height: 48px;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #0a66c2, #004182);
+    border-radius: 4px;
+    color: white;
+    font-size: 24px;
+}
+
+.education-details h3 {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 2px;
+}
+
+.education-details .degree {
+    font-size: 14px;
+    margin-bottom: 2px;
+}
+
+.education-details .duration {
+    font-size: 12px;
+    color: #00000099;
+    margin-bottom: 4px;
+}
+
+.education-details .description {
+    font-size: 14px;
+    margin-top: 8px;
+    line-height: 1.5;
+}
+
+.education-details .description em {
+    color: #0a66c2;
+    font-style: italic;
+}
+
+/* Skills Grid */
+.skills-grid {
+    display: grid;
+    gap: 20px;
+}
+
+.skill-category h3 {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 12px;
+}
+
+.skill-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.skill-tag {
+    background-color: #f3f2ef;
+    color: #000000e6;
+    padding: 6px 12px;
+    border-radius: 16px;
+    font-size: 14px;
+    font-weight: 500;
+    display: inline-block;
+}
+
+/* Sidebar */
+.profile-sidebar {
+    position: sticky;
+    top: 76px;
+    align-self: flex-start;
+}
+
+.sidebar-card {
+    padding: 16px;
+    margin-bottom: 8px;
+}
+
+.sidebar-card h3 {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 12px;
+}
+
+.sidebar-card p {
+    font-size: 14px;
+    margin-bottom: 4px;
+}
+
+.sidebar-card a {
+    color: #0a66c2;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.sidebar-card a:hover {
+    text-decoration: underline;
+}
+
+.humor-text {
+    font-size: 12px;
+    color: #00000099;
+    font-style: italic;
+}
+
+/* People List */
+.people-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.people-item {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    cursor: pointer;
+}
+
+.people-item:hover strong {
+    color: #0a66c2;
+    text-decoration: underline;
+}
+
+.people-avatar {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #0a66c2, #004182);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    flex-shrink: 0;
+}
+
+.people-item strong {
+    font-size: 14px;
+    font-weight: 600;
+    display: block;
+}
+
+.people-item p {
+    font-size: 12px;
+    color: #00000099;
+    margin: 0;
+}
+
+/* Analytics */
+.analytics-item {
+    display: flex;
+    gap: 12px;
+    align-items: flex-start;
+    margin-bottom: 12px;
+}
+
+.analytics-item:last-child {
+    margin-bottom: 0;
+}
+
+.analytics-item i {
+    font-size: 20px;
+    color: #00000099;
+    margin-top: 2px;
+}
+
+.analytics-item strong {
+    font-size: 14px;
+    font-weight: 600;
+    display: block;
+    margin-bottom: 2px;
+}
+
+.analytics-item p {
+    font-size: 12px;
+    color: #00000099;
+    margin: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .profile-page-container {
+        grid-template-columns: 1fr;
+    }
+
+    .profile-sidebar {
+        display: none;
+    }
+}
+
+@media (max-width: 768px) {
+    .profile-header-bg {
+        height: 120px;
+    }
+
+    .profile-header-avatar {
+        width: 120px;
+        height: 120px;
+    }
+
+    .profile-header-content {
+        margin-top: -60px;
+    }
+
+    .profile-header-actions {
+        flex-wrap: wrap;
+    }
+
+    .profile-header-highlights {
+        flex-direction: column;
+        gap: 12px;
+    }
+}
