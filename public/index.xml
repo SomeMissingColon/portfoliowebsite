@@ -58,6 +58,13 @@
       <description>&lt;p&gt;People are always surprised when I tell them I use Python, SQL, and cloud services as an Account Manager.&lt;/p&gt;&#xA;&lt;p&gt;&amp;ldquo;Isn&amp;rsquo;t that for developers?&amp;rdquo;&lt;/p&gt;&#xA;&lt;p&gt;Nope. It&amp;rsquo;s for anyone who wants an unfair advantage.&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;My Sales Tech Stack:&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;🐍 Python&lt;/strong&gt;&#xA;• Lead generation scripts&#xA;• Data enrichment automation&#xA;• CRM data cleaning&#xA;• Pipeline analytics&#xA;• Email sequence optimization&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;🗄️ SQL&lt;/strong&gt;&#xA;• Querying customer databases&#xA;• Building custom reports&#xA;• Analyzing conversion patterns&#xA;• Segmenting prospects&#xA;• Performance dashboards&lt;/p&gt;</description>
     </item>
     <item>
+      <title>Jobs</title>
+      <link>http://localhost:1313/jobs/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/jobs/</guid>
+      <description></description>
+    </item>
+    <item>
       <title>Messaging</title>
       <link>http://localhost:1313/messaging/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>

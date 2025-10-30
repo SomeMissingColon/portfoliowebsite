@@ -28,6 +28,8 @@
   </url><url>
     <loc>http://localhost:1313/categories/</loc>
   </url><url>
+    <loc>http://localhost:1313/jobs/</loc>
+  </url><url>
     <loc>http://localhost:1313/messaging/</loc>
   </url><url>
     <loc>http://localhost:1313/tags/</loc>

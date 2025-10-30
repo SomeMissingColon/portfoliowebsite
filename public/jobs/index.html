@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jobs - LinkedOut</title>
+    <link rel="stylesheet" href="/styles.css">
+    <link rel="stylesheet" href="/jobs.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    
+<nav class="navbar">
+    <div class="nav-container">
+        <div class="nav-left">
+            <a href="http://localhost:1313/" class="logo">
+                <i class="fa-brands fa-linkedin"></i>
+                <span class="logo-text">LinkedOut</span>
+            </a>
+            <div class="search-bar">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input type="text" placeholder="Search for skills I don't have">
+            </div>
+        </div>
+        <div class="nav-right">
+            <a href="http://localhost:1313/" class="nav-item">
+                <i class="fa-solid fa-house"></i>
+                <span>Home</span>
+            </a>
+            <a href="#" class="nav-item">
+                <i class="fa-solid fa-user-group"></i>
+                <span>Network</span>
+            </a>
+            <a href="/jobs" class="nav-item nav-item-active">
+                <i class="fa-solid fa-briefcase"></i>
+                <span>Jobs</span>
+            </a>
+            <a href="/messaging" class="nav-item ">
+                <i class="fa-solid fa-comment-dots"></i>
+                <span>Messaging</span>
+            </a>
+            <a href="#" class="nav-item">
+                <i class="fa-solid fa-bell"></i>
+                <span>Notifications</span>
+            </a>
+            <a href="/profile" class="nav-item profile-nav">
+                <img src="/profile.jpg" alt="Profile" class="nav-avatar-img">
+                <span>Me <i class="fa-solid fa-caret-down"></i></span>
+            </a>
+        </div>
+    </div>
+</nav>
+
+
+    
+    <div class="jobs-container">
+        
+        <main class="jobs-main">
+            
+            <div class="card jobs-header">
+                <h1>Get in Touch with Thomas</h1>
+                <p class="jobs-subtitle">Looking to collaborate, hire, or just chat about sales automation? Let's connect!</p>
+            </div>
+
+            
+            <div class="card contact-form-card">
+                <h2><i class="fa-solid fa-briefcase"></i> Contact Form</h2>
+                <p class="form-description">Fill out the form below and I'll get back to you faster than a cold call conversion! ⚡</p>
+
+                <form action="https://formspree.io/f/mrbokdby" method="POST" class="contact-form">
+                    
+                    <div class="form-group">
+                        <label for="name">
+                            Full Name <span class="required">*</span>
+                        </label>
+                        <input
+                            type="text"
+                            id="name"
+                            name="name"
+                            placeholder="e.g., John Doe"
+                            required
+                        >
+                    </div>
+
+                    
+                    <div class="form-group">
+                        <label for="email">
+                            Email Address <span class="required">*</span>
+                        </label>
+                        <input
+                            type="email"
+                            id="email"
+                            name="email"
+                            placeholder="e.g., john.doe@company.com"
+                            required
+                        >
+                    </div>
+
+                    
+                    <div class="form-group">
+                        <label for="company">
+                            Company / Organization
+                        </label>
+                        <input
+                            type="text"
+                            id="company"
+                            name="company"
+                            placeholder="e.g., Acme Corp"
+                        >
+                    </div>
+
+                    
+                    <div class="form-group">
+                        <label for="subject">
+                            Subject <span class="required">*</span>
+                        </label>
+                        <select id="subject" name="subject" required>
+                            <option value="">Select a topic...</option>
+                            <option value="job-opportunity">Job Opportunity</option>
+                            <option value="collaboration">Collaboration / Partnership</option>
+                            <option value="consulting">Consulting Inquiry</option>
+                            <option value="speaking">Speaking Engagement</option>
+                            <option value="automation">Sales Automation Help</option>
+                            <option value="networking">General Networking</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+
+                    
+                    <div class="form-group">
+                        <label for="message">
+                            Message <span class="required">*</span>
+                        </label>
+                        <textarea
+                            id="message"
+                            name="message"
+                            rows="6"
+                            placeholder="Tell me what's on your mind... (No sales pitches please, I'm the one who does the pitching! 😂)"
+                            required
+                        ></textarea>
+                    </div>
+
+                    
+                    <div class="form-group">
+                        <label for="linkedin">
+                            LinkedIn Profile URL
+                        </label>
+                        <input
+                            type="url"
+                            id="linkedin"
+                            name="linkedin"
+                            placeholder="https://linkedin.com/in/yourprofile"
+                        >
+                    </div>
+
+                    
+                    <div class="form-actions">
+                        <button type="submit" class="btn-primary submit-btn">
+                            <i class="fa-solid fa-paper-plane"></i>
+                            Send Message
+                        </button>
+                        <p class="form-note">
+                            <i class="fa-solid fa-shield-halved"></i>
+                            Your information is handled securely via Formspree
+                        </p>
+                    </div>
+                </form>
+            </div>
+
+            
+            <div class="card why-reach-out">
+                <h2>Why Reach Out?</h2>
+                <div class="reasons-grid">
+                    <div class="reason-item">
+                        <div class="reason-icon">💼</div>
+                        <h3>Job Opportunities</h3>
+                        <p>Looking for someone who can sell AND build? I'm your unicorn.</p>
+                    </div>
+                    <div class="reason-item">
+                        <div class="reason-icon">🤝</div>
+                        <h3>Collaboration</h3>
+                        <p>Got a project that needs both tech and sales expertise? Let's talk.</p>
+                    </div>
+                    <div class="reason-item">
+                        <div class="reason-icon">🤖</div>
+                        <h3>Sales Automation</h3>
+                        <p>Want to generate 53,000 leads like I did? I can show you how.</p>
+                    </div>
+                    <div class="reason-item">
+                        <div class="reason-icon">🎤</div>
+                        <h3>Speaking</h3>
+                        <p>Need a speaker who can bridge the gap between sales and tech? I'm in.</p>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        
+        <aside class="jobs-sidebar">
+            
+            <div class="card sidebar-card">
+                <h3>Quick Contact</h3>
+                <div class="quick-contact-item">
+                    <i class="fa-solid fa-envelope"></i>
+                    <div>
+                        <strong>Email</strong>
+                        <a href="mailto:thomasnoidion@gmail.com">thomasnoidion@gmail.com</a>
+                    </div>
+                </div>
+                <div class="quick-contact-item">
+                    <i class="fa-solid fa-phone"></i>
+                    <div>
+                        <strong>Phone</strong>
+                        <a href="tel:+14384622434">+1 (438) 462-2434</a>
+                    </div>
+                </div>
+                <div class="quick-contact-item">
+                    <i class="fa-brands fa-linkedin"></i>
+                    <div>
+                        <strong>LinkedIn</strong>
+                        <a href="https://linkedin.com/in/thomas-dion" target="_blank">thomas-dion</a>
+                    </div>
+                </div>
+            </div>
+
+            
+            <div class="card sidebar-card">
+                <h3>Response Time</h3>
+                <p><i class="fa-solid fa-clock"></i> <strong>Typically within 24-48 hours</strong></p>
+                <p class="sidebar-note">Unless I'm on a cold calling spree. Then maybe 72 hours. 😅</p>
+            </div>
+
+            
+            <div class="card sidebar-card">
+                <h3>Fun Facts</h3>
+                <ul class="fun-facts-list">
+                    <li>📞 Makes 60 cold calls per day</li>
+                    <li>🐍 Automates everything with Python</li>
+                    <li>💰 Generated $302K ARR in 13 months</li>
+                    <li>🦄 Sales rep who actually codes</li>
+                    <li>☕ Powered by coffee and curiosity</li>
+                </ul>
+            </div>
+
+            
+            <div class="card sidebar-card profile-preview">
+                <img src="/profile.jpg" alt="Thomas Dion" class="sidebar-profile-img">
+                <h4>Thomas Dion</h4>
+                <p>Account Manager | Product Owner | Python Automation Enthusiast</p>
+                <a href="/profile" class="view-profile-link">View Full Profile →</a>
+            </div>
+        </aside>
+    </div>
+
+    <script src="/script.js"></script>
+</body>
+</html>

@@ -20,7 +20,7 @@
                 <i class="fa-solid fa-user-group"></i>
                 <span>Network</span>
             </a>
-            <a href="#" class="nav-item">
+            <a href="{{ "jobs" | relURL }}" class="nav-item {{ if eq .Page.Title "Jobs" }}nav-item-active{{ end }}">
                 <i class="fa-solid fa-briefcase"></i>
                 <span>Jobs</span>
             </a>
