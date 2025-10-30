@@ -243,7 +243,7 @@ function createNewPost(content) {
         <div class="post-header">
             <img src="/ronaldo.jpg" alt="Profile" class="post-avatar-img">
             <div class="post-author-info">
-                <h4>Your Name</h4>
+                <h4>Ronaldo</h4>
                 <p>Thought Leader in Overthinking</p>
                 <p class="post-time">Just now • <i class="fa-solid fa-earth-americas"></i></p>
             </div>
@@ -340,7 +340,7 @@ function openPostModal() {
                 <div class="post-modal-user">
                     <img src="/ronaldo.jpg" alt="Profile" class="post-modal-avatar">
                     <div>
-                        <h4>Thomas Dion</h4>
+                        <h4>Ronaldo</h4>
                         <p>Post to Anyone</p>
                     </div>
                 </div>
