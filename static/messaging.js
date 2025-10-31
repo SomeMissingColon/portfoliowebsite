@@ -61,7 +61,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         if (type === 'received') {
             const avatar = document.createElement('img');
-            avatar.src = 'profile.jpg';
+            avatar.src = '/profile.jpg';
             avatar.alt = 'Thomas Dion';
             avatar.className = 'message-avatar';
             messageDiv.appendChild(avatar);
@@ -90,7 +90,7 @@ document.addEventListener('DOMContentLoaded', () => {
         typingDiv.id = 'typingIndicator';
 
         const avatar = document.createElement('img');
-        avatar.src = 'profile.jpg';
+        avatar.src = '/profile.jpg';
         avatar.alt = 'Thomas Dion';
         avatar.className = 'message-avatar';
         typingDiv.appendChild(avatar);
