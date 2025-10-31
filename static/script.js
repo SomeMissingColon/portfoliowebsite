@@ -84,7 +84,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     <p>Sales Professional & Technology Enthusiast</p>
                 </div>
             </div>
-            <a href="/profile" class="profile-dropdown-btn primary">View profile</a>
+            <a href="/profile" class="profile-dropdown-btn primary">View Thomas Dion's profile</a>
 
             <div class="profile-dropdown-section">
                 <h5>Account</h5>
@@ -322,7 +322,7 @@ function createNewPost(content) {
             <img src="/ronaldo.jpg" alt="Profile" class="post-avatar-img">
             <div class="post-author-info">
                 <h4>Ronaldo</h4>
-                <p>Thought Leader in Overthinking</p>
+                <p> ERP consultant | Hobbyist footballer</p>
                 <p class="post-time">Just now • <i class="fa-solid fa-earth-americas"></i></p>
             </div>
             <button class="post-menu"><i class="fa-solid fa-ellipsis"></i></button>
