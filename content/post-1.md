@@ -2,7 +2,7 @@
 title: "53,000 Contacts Generated with Python & SQL"
 date: 2025-10-29
 author: "Thomas Dion"
-authorTitle: "Account Manager at TELUS | Python Automation Enthusiast"
+authorTitle: "Former Account Manager at TELUS | Python Automation Enthusiast"
 avatar: "TD"
 reactions: ["👍", "🔥", "💡"]
 reactionText: "47 people (including your sales team)"

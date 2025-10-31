@@ -2,7 +2,7 @@
 title: "How I Exceeded Quota by 20% (While Others Missed Theirs)"
 date: 2025-10-22
 author: "Thomas Dion"
-authorTitle: "Account Manager at TELUS | $302K ARR in 13 Months"
+authorTitle: "Former Account Manager at TELUS | $302K ARR in 13 Months"
 avatar: "TD"
 reactions: ["🎯", "👍", "💰"]
 reactionText: "89 (your sales manager included)"
@@ -10,7 +10,7 @@ comments: "24"
 shares: "31"
 ---
 
-13 months at TELUS. $302K ARR. 20% above quota.
+During my 13 months at TELUS: $302K ARR. 20% above quota.
 
 Here's exactly what I did differently:
 

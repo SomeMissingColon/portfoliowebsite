@@ -2,7 +2,7 @@
 title: "Cold Calling in 2025: Still Undefeated"
 date: 2025-10-28
 author: "Thomas Dion"
-authorTitle: "Account Manager | 2.4% Conversion Rate | 60 Calls/Day"
+authorTitle: "Sales Machine | 2.4% Conversion Rate | 60 Calls/Day"
 avatar: "TD"
 reactions: ["👍", "💪", "📞"]
 reactionText: "34 (mostly other cold callers)"
@@ -12,7 +12,7 @@ shares: "8"
 
 Hot take: Cold calling isn't dead. You're just doing it wrong. 📞
 
-**My Stats at TELUS:**
+**My Stats at TELUS (when I worked there):**
 • 60 calls per day (consistently)
 • 2.4% conversion rate (industry average: 1-2%)
 • 350+ new SMB clients acquired in 13 months

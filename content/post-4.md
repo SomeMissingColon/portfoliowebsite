@@ -13,7 +13,7 @@ shares: "4"
 **2018:** Graduated from Le Wagon (Full-Stack Web Developer)
 **2021:** Became a Wealth Manager at Manulife
 **2022:** Pivoted to Product Owner at a tech startup
-**2024:** Now an Account Manager at TELUS crushing quota
+**2024:** Former Account Manager at TELUS (crushed quota)
 
 People ask: "Why didn't you just become a developer?"
 
